@@ -28,7 +28,10 @@ async function checkGitHub(e) {
       '--jq', '{archived, fork, parent_full: (.parent.full_name // "")}']);
     const o = JSON.parse(stdout);
     // Listing a fork as if it were the source miscredits the real author.
-    if (o.fork && o.parent_full) return { ok: true, warn: `FORK of ${o.parent_full} — link the original` };
+    // allowFork marks the cases where linking our own fork is deliberate.
+    if (o.fork && o.parent_full && !e.allowFork) {
+      return { ok: true, warn: `FORK of ${o.parent_full} — link the original, or set allowFork` };
+    }
     if (o.archived) return { ok: true, warn: 'ARCHIVED' };
     return { ok: true };
   } catch {

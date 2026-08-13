@@ -1,51 +1,21 @@
 THE AI BUILDER'S TOOLBOX
 What to reach for, by the thing you're actually trying to do.
 
-159 curated skills, repos and tools across 19 domains.
+148 curated skills, repos and tools across 19 domains.
 Every link checked 2026-08-13.
 
 ─────────────────────────────
-MY OWN SKILLS & TEMPLATES
-Things I built and actually run. All open source.
-
-grill-me-codex — Interviews you until the plan is airtight, then has Codex adversarially attack it before you write code.
-https://github.com/chaseai-yt/grill-me-codex
+MY SKILLS
+The ones I built that are worth your time.
 
 cloneify — Turns "I want to clone X" into a paste-ready build prompt via a gated scope → research → reviewed-plan pipeline.
 https://github.com/cth9191/cloneify
 
-chase-ai-skills — The skill pack for this community. Plugin marketplace: chase-ai-plus.
-https://github.com/cth9191/chase-ai-skills
+scroll-world — Immersive scroll-scrubbed "fly through the world" landing pages, generated with Higgsfield. My fork of oso95/scroll-world.
+https://github.com/cth9191/scroll-world
 
-agentic-os-dashboard — Local cockpit for Claude Code usage — rate limits, activity chart, one-click skill buttons.
-https://github.com/cth9191/agentic-os-dashboard
-
-agentic-os-runner — Background daemon, hooks and metric-pull templates for running an agentic OS.
-https://github.com/cth9191/agentic-os-runner
-
-taste-vault — Screenshots in, design vocabulary and paste-ready Claude Code briefs out.
-https://github.com/cth9191/taste-vault
-
-whisperflow-local — 100% local Wispr Flow clone for Windows. Ctrl+Win to dictate, faster-whisper plus a local Ollama cleanup pass.
-https://github.com/cth9191/whisperflow-local
-
-morning-intel — AI news, X, HN, YouTube, GitHub trending and Gmail triage, ending in an action plan.
-https://github.com/cth9191/morning-intel
-
-example-multimodal-rag — A worked multimodal RAG example you can read end to end.
-https://github.com/cth9191/example-multimodal-rag
-
-TweetGod-template — Finds high-potential tweets, sends them to Telegram for approval, posts quote tweets.
-https://github.com/cth9191/TweetGod-template
-
-InboundVoiceAgent — ElevenLabs plus n8n inbound voice agent.
-https://github.com/cth9191/InboundVoiceAgent
-
-UGC-Machine — n8n template for producing AI UGC ads.
-https://github.com/cth9191/UGC-Machine
-
-chase-ai-carousels-template — Carousel template library plus the Playwright export pipeline behind it.
-https://github.com/cth9191/chase-ai-carousels-template
+grill-me-codex — Interviews you until the plan is airtight, then has Codex adversarially attack it before you write code.
+https://github.com/chaseai-yt/grill-me-codex
 
 
 ─────────────────────────────
@@ -410,9 +380,6 @@ https://github.com/Zackriya-Solutions/meetily
 
 img2threejs/img2threejs — Reference image → animation-ready procedural Three.js. Genuinely surprising.
 https://github.com/img2threejs/img2threejs
-
-oso95/scroll-world — Turns a brand into a scrollable 3D world landing page.
-https://github.com/oso95/scroll-world
 
 beshuaxian/higgsfield-seedance2-jineng — 15 Seedance 2.0 × Higgsfield video skills — hook framework, camera encyclopedia, production prompts.
 https://github.com/beshuaxian/higgsfield-seedance2-jineng

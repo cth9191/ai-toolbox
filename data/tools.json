@@ -8,15 +8,9 @@
   "domains": [
     {
       "id": "chase-originals",
-      "title": "My Own Skills & Templates",
-      "blurb": "Things I built and actually run. All open source.",
+      "title": "My Skills",
+      "blurb": "The ones I built that are worth your time.",
       "entries": [
-        {
-          "name": "grill-me-codex",
-          "url": "https://github.com/chaseai-yt/grill-me-codex",
-          "kind": "skill",
-          "desc": "Interviews you until the plan is airtight, then has Codex adversarially attack it before you write code."
-        },
         {
           "name": "cloneify",
           "url": "https://github.com/cth9191/cloneify",
@@ -24,70 +18,17 @@
           "desc": "Turns \"I want to clone X\" into a paste-ready build prompt via a gated scope → research → reviewed-plan pipeline."
         },
         {
-          "name": "chase-ai-skills",
-          "url": "https://github.com/cth9191/chase-ai-skills",
-          "kind": "repo",
-          "desc": "The skill pack for this community. Plugin marketplace: chase-ai-plus."
-        },
-        {
-          "name": "agentic-os-dashboard",
-          "url": "https://github.com/cth9191/agentic-os-dashboard",
-          "kind": "repo",
-          "desc": "Local cockpit for Claude Code usage — rate limits, activity chart, one-click skill buttons."
-        },
-        {
-          "name": "agentic-os-runner",
-          "url": "https://github.com/cth9191/agentic-os-runner",
-          "kind": "repo",
-          "desc": "Background daemon, hooks and metric-pull templates for running an agentic OS."
-        },
-        {
-          "name": "taste-vault",
-          "url": "https://github.com/cth9191/taste-vault",
-          "kind": "repo",
-          "desc": "Screenshots in, design vocabulary and paste-ready Claude Code briefs out."
-        },
-        {
-          "name": "whisperflow-local",
-          "url": "https://github.com/cth9191/whisperflow-local",
-          "kind": "repo",
-          "desc": "100% local Wispr Flow clone for Windows. Ctrl+Win to dictate, faster-whisper plus a local Ollama cleanup pass."
-        },
-        {
-          "name": "morning-intel",
-          "url": "https://github.com/cth9191/morning-intel",
+          "name": "scroll-world",
+          "url": "https://github.com/cth9191/scroll-world",
           "kind": "skill",
-          "desc": "AI news, X, HN, YouTube, GitHub trending and Gmail triage, ending in an action plan."
+          "desc": "Immersive scroll-scrubbed \"fly through the world\" landing pages, generated with Higgsfield. My fork of oso95/scroll-world.",
+          "allowFork": true
         },
         {
-          "name": "example-multimodal-rag",
-          "url": "https://github.com/cth9191/example-multimodal-rag",
-          "kind": "repo",
-          "desc": "A worked multimodal RAG example you can read end to end."
-        },
-        {
-          "name": "TweetGod-template",
-          "url": "https://github.com/cth9191/TweetGod-template",
-          "kind": "repo",
-          "desc": "Finds high-potential tweets, sends them to Telegram for approval, posts quote tweets."
-        },
-        {
-          "name": "InboundVoiceAgent",
-          "url": "https://github.com/cth9191/InboundVoiceAgent",
-          "kind": "repo",
-          "desc": "ElevenLabs plus n8n inbound voice agent."
-        },
-        {
-          "name": "UGC-Machine",
-          "url": "https://github.com/cth9191/UGC-Machine",
-          "kind": "repo",
-          "desc": "n8n template for producing AI UGC ads."
-        },
-        {
-          "name": "chase-ai-carousels-template",
-          "url": "https://github.com/cth9191/chase-ai-carousels-template",
-          "kind": "repo",
-          "desc": "Carousel template library plus the Playwright export pipeline behind it."
+          "name": "grill-me-codex",
+          "url": "https://github.com/chaseai-yt/grill-me-codex",
+          "kind": "skill",
+          "desc": "Interviews you until the plan is airtight, then has Codex adversarially attack it before you write code."
         }
       ]
     },
@@ -783,12 +724,6 @@
           "url": "https://github.com/img2threejs/img2threejs",
           "kind": "skill",
           "desc": "Reference image → animation-ready procedural Three.js. Genuinely surprising."
-        },
-        {
-          "name": "oso95/scroll-world",
-          "url": "https://github.com/oso95/scroll-world",
-          "kind": "skill",
-          "desc": "Turns a brand into a scrollable 3D world landing page."
         },
         {
           "name": "beshuaxian/higgsfield-seedance2-jineng",

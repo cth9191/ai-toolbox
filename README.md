@@ -2,13 +2,13 @@
 
 **What to reach for, by the thing you're actually trying to do.**
 
-159 curated skills, repos and tools across 19 domains.
+148 curated skills, repos and tools across 19 domains.
 
 > Every link here was checked against the GitHub API or a live HTTP request. Curated from what I actually use and talk about, not scraped from an awesome-list.
 
 ## Contents
 
-- [My Own Skills & Templates](#chase-originals) — Things I built and actually run. All open source.
+- [My Skills](#chase-originals) — The ones I built that are worth your time.
 - [Skill & Plugin Collections](#skills-collections) — Don't write a skill before checking whether someone already did.
 - [Frontend & Design](#frontend-design) — Stopping your agent from producing generic purple-gradient slop.
 - [CLI & Terminal](#cli) — Agents are best at things that have a command line. This is how you give them one.
@@ -30,25 +30,15 @@
 
 <a id="chase-originals"></a>
 
-## My Own Skills & Templates
+## My Skills
 
-*Things I built and actually run. All open source.*
+*The ones I built that are worth your time.*
 
 | Tool | What it’s for |
 |---|---|
-| [grill-me-codex](https://github.com/chaseai-yt/grill-me-codex) | Interviews you until the plan is airtight, then has Codex adversarially attack it before you write code. |
 | [cloneify](https://github.com/cth9191/cloneify) | Turns "I want to clone X" into a paste-ready build prompt via a gated scope → research → reviewed-plan pipeline. |
-| [chase-ai-skills](https://github.com/cth9191/chase-ai-skills) | The skill pack for this community. Plugin marketplace: chase-ai-plus. |
-| [agentic-os-dashboard](https://github.com/cth9191/agentic-os-dashboard) | Local cockpit for Claude Code usage — rate limits, activity chart, one-click skill buttons. |
-| [agentic-os-runner](https://github.com/cth9191/agentic-os-runner) | Background daemon, hooks and metric-pull templates for running an agentic OS. |
-| [taste-vault](https://github.com/cth9191/taste-vault) | Screenshots in, design vocabulary and paste-ready Claude Code briefs out. |
-| [whisperflow-local](https://github.com/cth9191/whisperflow-local) | 100% local Wispr Flow clone for Windows. Ctrl+Win to dictate, faster-whisper plus a local Ollama cleanup pass. |
-| [morning-intel](https://github.com/cth9191/morning-intel) | AI news, X, HN, YouTube, GitHub trending and Gmail triage, ending in an action plan. |
-| [example-multimodal-rag](https://github.com/cth9191/example-multimodal-rag) | A worked multimodal RAG example you can read end to end. |
-| [TweetGod-template](https://github.com/cth9191/TweetGod-template) | Finds high-potential tweets, sends them to Telegram for approval, posts quote tweets. |
-| [InboundVoiceAgent](https://github.com/cth9191/InboundVoiceAgent) | ElevenLabs plus n8n inbound voice agent. |
-| [UGC-Machine](https://github.com/cth9191/UGC-Machine) | n8n template for producing AI UGC ads. |
-| [chase-ai-carousels-template](https://github.com/cth9191/chase-ai-carousels-template) | Carousel template library plus the Playwright export pipeline behind it. |
+| [scroll-world](https://github.com/cth9191/scroll-world) | Immersive scroll-scrubbed "fly through the world" landing pages, generated with Higgsfield. My fork of oso95/scroll-world. |
+| [grill-me-codex](https://github.com/chaseai-yt/grill-me-codex) | Interviews you until the plan is airtight, then has Codex adversarially attack it before you write code. |
 
 <a id="skills-collections"></a>
 
@@ -251,7 +241,6 @@
 | [ElevenLabs](https://elevenlabs.io) | Voiceover that doesn't sound like 2023. |
 | [Zackriya-Solutions/meetily](https://github.com/Zackriya-Solutions/meetily) | Privacy-first meeting notes. Live transcription, runs locally. |
 | [img2threejs/img2threejs](https://github.com/img2threejs/img2threejs) | Reference image → animation-ready procedural Three.js. Genuinely surprising. |
-| [oso95/scroll-world](https://github.com/oso95/scroll-world) | Turns a brand into a scrollable 3D world landing page. |
 | [beshuaxian/higgsfield-seedance2-jineng](https://github.com/beshuaxian/higgsfield-seedance2-jineng) | 15 Seedance 2.0 × Higgsfield video skills — hook framework, camera encyclopedia, production prompts. |
 
 <a id="voice"></a>
