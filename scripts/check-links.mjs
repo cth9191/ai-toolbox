@@ -1,6 +1,6 @@
-// Re-verifies every link in data/tools.json and refreshes GitHub star counts.
-//   node scripts/check-links.mjs          report only
-//   node scripts/check-links.mjs --write  also write refreshed stars back to tools.json
+// Verifies every link in data/tools.json still resolves, and flags entries that
+// point at a fork rather than the original author's repo.
+//   node scripts/check-links.mjs
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -9,26 +9,26 @@ import { promisify } from 'node:util';
 const ex = promisify(execFile);
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const FILE = path.join(ROOT, 'data', 'tools.json');
-const data = JSON.parse(fs.readFileSync(FILE, 'utf8'));
-const WRITE = process.argv.includes('--write');
+const data = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'tools.json'), 'utf8'));
 
-const all = data.domains.flatMap(d => d.entries.map(e => ({ ...e, domain: d.title, _ref: e })));
+const all = data.domains.flatMap(d => d.entries.map(e => ({ ...e, domain: d.title })));
 console.log(`checking ${all.length} links...\n`);
 
 let hasGh = true;
-try { await ex('gh', ['auth', 'status']); } catch { hasGh = false; console.log('note: gh CLI not authenticated — GitHub links fall back to HTTP checks, stars not refreshed.\n'); }
-
-const bad = [];
-let refreshed = 0;
+try { await ex('gh', ['auth', 'status']); } catch {
+  hasGh = false;
+  console.log('note: gh CLI not authenticated — GitHub links fall back to plain HTTP checks.\n');
+}
 
 async function checkGitHub(e) {
   const m = e.url.match(/github\.com\/([^/]+\/[^/#?]+)/);
   if (!m || !hasGh) return checkHttp(e);
   try {
-    const { stdout } = await ex('gh', ['api', `repos/${m[1]}`, '--jq', '{stargazers_count,archived}']);
+    const { stdout } = await ex('gh', ['api', `repos/${m[1]}`,
+      '--jq', '{archived, fork, parent_full: (.parent.full_name // "")}']);
     const o = JSON.parse(stdout);
-    if (e.stars !== o.stargazers_count) { e._ref.stars = o.stargazers_count; refreshed++; }
+    // Listing a fork as if it were the source miscredits the real author.
+    if (o.fork && o.parent_full) return { ok: true, warn: `FORK of ${o.parent_full} — link the original` };
     if (o.archived) return { ok: true, warn: 'ARCHIVED' };
     return { ok: true };
   } catch {
@@ -40,15 +40,16 @@ async function checkHttp(e) {
   try {
     const { stdout } = await ex('curl', ['-sS', '-o', '/dev/null', '-w', '%{http_code}', '-L', '--max-time', '15', e.url]);
     const code = Number(stdout.trim());
-    // 403/405 are bot-blocks from real sites, not dead links
     if (code >= 200 && code < 400) return { ok: true };
-    if (code === 403 || code === 405 || code === 429) return { ok: true, warn: `bot-blocked (${code})` };
+    // 403/405/429 are bot-blocks from real sites, not dead links
+    if ([403, 405, 429].includes(code)) return { ok: true, warn: `bot-blocked (${code})` };
     return { ok: false, reason: `HTTP ${code}` };
   } catch (err) {
     return { ok: false, reason: String(err.message).slice(0, 60) };
   }
 }
 
+const bad = [];
 const queue = [...all];
 await Promise.all(Array.from({ length: 8 }, async () => {
   while (queue.length) {
@@ -58,12 +59,6 @@ await Promise.all(Array.from({ length: 8 }, async () => {
     else if (r.warn) console.log(`  warn  ${e.name} — ${r.warn}`);
   }
 }));
-
-if (WRITE && refreshed) {
-  data.meta.starsAsOf = new Date().toISOString().slice(0, 10);
-  fs.writeFileSync(FILE, JSON.stringify(data, null, 2) + '\n');
-  console.log(`\nrefreshed ${refreshed} star counts, updated starsAsOf`);
-}
 
 console.log(`\n${all.length - bad.length}/${all.length} OK`);
 if (bad.length) { console.error(`${bad.length} dead link(s)`); process.exit(1); }

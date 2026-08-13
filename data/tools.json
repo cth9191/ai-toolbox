@@ -3,114 +3,92 @@
     "title": "The AI Builder's Toolbox",
     "tagline": "What to reach for, by the thing you're actually trying to do.",
     "starsAsOf": "2026-08-13",
-    "note": "Every link here was checked against the GitHub API or a live HTTP request on 2026-08-13 — 149 of 149 resolved. Entries marked ★ are ones I've personally used, not just bookmarked."
+    "note": "Every link here was checked against the GitHub API or a live HTTP request. Curated from what I actually use and talk about, not scraped from an awesome-list."
   },
   "domains": [
     {
-      "id": "start-here",
-      "title": "Start Here",
-      "blurb": "If you only open six links, open these.",
+      "id": "chase-originals",
+      "title": "My Own Skills & Templates",
+      "blurb": "Things I built and actually run. All open source.",
       "entries": [
-        { "name": "Claude Code", "url": "https://code.claude.com", "kind": "site", "desc": "The terminal coding agent everything else on this page plugs into.", "used": true },
-        { "name": "Claude Docs / API", "url": "https://platform.claude.com", "kind": "site", "desc": "Model IDs, pricing, prompt caching, tool use — the primary source, not a blog post.", "used": true },
-        { "name": "anthropics/skills", "url": "https://github.com/anthropics/skills", "kind": "repo", "stars": 168823, "desc": "Official Agent Skills repo. Read one SKILL.md and you'll understand the whole format.", "used": true },
-        { "name": "anthropics/claude-plugins-official", "url": "https://github.com/anthropics/claude-plugins-official", "kind": "repo", "stars": 33490, "desc": "Anthropic-curated plugin directory. Safest place to install from first.", "used": false },
-        { "name": "hesreallyhim/awesome-claude-code", "url": "https://github.com/hesreallyhim/awesome-claude-code", "kind": "repo", "stars": 52237, "desc": "The big hand-picked community list. Go here when this page doesn't have it.", "used": false },
-        { "name": "Model Context Protocol", "url": "https://modelcontextprotocol.io", "kind": "site", "desc": "The spec behind MCP servers. Worth 20 minutes before you install your first one.", "used": true }
-      ]
-    },
-    {
-      "id": "frontend-design",
-      "title": "Frontend & Design",
-      "blurb": "Stopping your agent from producing generic purple-gradient slop.",
-      "entries": [
-        { "name": "pbakaus/impeccable", "url": "https://github.com/pbakaus/impeccable", "kind": "skill", "stars": 58771, "desc": "A design language you drop in so the agent stops defaulting to bootstrap-brain.", "used": true },
-        { "name": "Leonxlnx/taste-skill", "url": "https://github.com/Leonxlnx/taste-skill", "kind": "skill", "stars": 76169, "desc": "Gives the model actual taste. The anti-slop skill people mean when they say anti-slop.", "used": true },
-        { "name": "Nutlope/hallmark", "url": "https://github.com/Nutlope/hallmark", "kind": "skill", "stars": 24591, "desc": "Same job as the two above, different opinion. Works in Claude Code, Cursor and Codex.", "used": false },
-        { "name": "VoltAgent/awesome-design-md", "url": "https://github.com/VoltAgent/awesome-design-md", "kind": "repo", "stars": 108245, "desc": "DESIGN.md files reverse-engineered from real brand systems. Drop one in your repo.", "used": true },
-        { "name": "google-labs-code/design.md", "url": "https://github.com/google-labs-code/design.md", "kind": "repo", "stars": 27212, "desc": "The actual spec for describing a visual identity to a coding agent.", "used": false },
-        { "name": "21st.dev", "url": "https://21st.dev", "kind": "site", "desc": "Component marketplace + MCP so the agent can pull real UI instead of inventing it.", "used": true },
-        { "name": "shadcn/ui", "url": "https://ui.shadcn.com", "kind": "site", "desc": "The component library most agent-generated React lands on. Know it.", "used": true },
-        { "name": "shadcn/improve", "url": "https://github.com/shadcn/improve", "kind": "repo", "stars": 8858, "desc": "Use your best model to audit the codebase, then let a cheap model execute the plan.", "used": false },
-        { "name": "nexu-io/open-design", "url": "https://github.com/nexu-io/open-design", "kind": "repo", "stars": 85524, "desc": "Local-first desktop app; open-source take on Claude Design.", "used": true },
-        { "name": "facebook/astryx", "url": "https://github.com/facebook/astryx", "kind": "repo", "stars": 11977, "desc": "Open-source design system built to be driven by an agent.", "used": true },
-        { "name": "alchaincyf/huashu-design", "url": "https://github.com/alchaincyf/huashu-design", "kind": "skill", "stars": 22963, "desc": "HTML-native design skill — good when you want markup, not a framework.", "used": true },
-        { "name": "nexu-io/html-anything", "url": "https://github.com/nexu-io/html-anything", "kind": "repo", "stars": 8266, "desc": "Agentic HTML editor. Agent writes the markup, you ship it.", "used": false },
-        { "name": "Tailwind CSS", "url": "https://tailwindcss.com", "kind": "site", "desc": "Assume every agent already knows it. Fight this and you'll lose.", "used": true },
-        { "name": "oil-oil/oil-motion", "url": "https://github.com/oil-oil/oil-motion", "kind": "repo", "stars": 1669, "desc": "Smooth, responsive web animations without hand-rolling easing curves.", "used": false },
-        { "name": "Jakubantalik/thinking-orbs", "url": "https://github.com/Jakubantalik/thinking-orbs", "kind": "repo", "stars": 2310, "desc": "Loading indicators built specifically for AI/agent UIs. Small but you'll want it.", "used": false },
-        { "name": "Figma", "url": "https://figma.com", "kind": "site", "desc": "Still where the design actually gets decided before code touches it.", "used": true }
-      ]
-    },
-    {
-      "id": "diagrams",
-      "title": "Diagrams & Visual Explainers",
-      "blurb": "For when the answer is a picture, not a paragraph.",
-      "entries": [
-        { "name": "cathrynlavery/diagram-design", "url": "https://github.com/cathrynlavery/diagram-design", "kind": "skill", "stars": 13234, "desc": "29 editorial diagram types as clean HTML+SVG. No Mermaid look, no drop shadows.", "used": false },
-        { "name": "tt-a1i/archify", "url": "https://github.com/tt-a1i/archify", "kind": "skill", "stars": 11983, "desc": "Architecture, sequence, data-flow and lifecycle diagrams that are actually verifiable.", "used": false },
-        { "name": "coleam00/excalidraw-diagram-skill", "url": "https://github.com/coleam00/excalidraw-diagram-skill", "kind": "skill", "stars": 4408, "desc": "Makes any coding agent produce real Excalidraw files.", "used": false },
-        { "name": "yizhiyanhua-ai/fireworks-tech-graph", "url": "https://github.com/yizhiyanhua-ai/fireworks-tech-graph", "kind": "skill", "stars": 9880, "desc": "Natural language in, production-quality SVG/PNG technical diagrams out.", "used": false },
-        { "name": "Excalidraw", "url": "https://excalidraw.com", "kind": "site", "desc": "The hand-drawn whiteboard. Fastest path from head to shareable picture.", "used": true },
-        { "name": "Mermaid", "url": "https://mermaid.js.org", "kind": "site", "desc": "Diagrams as text. Renders natively in GitHub and most docs tools.", "used": true }
-      ]
-    },
-    {
-      "id": "context-tokens",
-      "title": "Context & Token Management",
-      "blurb": "The single biggest lever on cost and on whether long sessions stay coherent.",
-      "entries": [
-        { "name": "JuliusBrussee/caveman", "url": "https://github.com/JuliusBrussee/caveman", "kind": "skill", "stars": 97950, "desc": "\"Why use many token when few token do trick.\" Cuts roughly 65% of tokens.", "used": true },
-        { "name": "DietrichGebert/ponytail", "url": "https://github.com/DietrichGebert/ponytail", "kind": "skill", "stars": 101966, "desc": "Makes the agent think like the laziest senior dev alive. Best code is the code you don't write.", "used": true },
-        { "name": "Mibayy/token-savior", "url": "https://github.com/Mibayy/token-savior", "kind": "mcp", "stars": 1115, "desc": "MCP server that held 97.9% on a real coding benchmark at 80% fewer active tokens.", "used": false },
-        { "name": "thomaschill/unclog", "url": "https://github.com/thomaschill/unclog", "kind": "cli", "stars": 34, "desc": "Audits which MCP servers, skills and CLAUDE.md bloat are eating your context window.", "used": false },
-        { "name": "DeusData/codebase-memory-mcp", "url": "https://github.com/DeusData/codebase-memory-mcp", "kind": "mcp", "stars": 38795, "desc": "Indexes a codebase into a persistent knowledge graph so the agent stops re-reading everything.", "used": true },
-        { "name": "MemPalace/mempalace", "url": "https://github.com/MemPalace/mempalace", "kind": "repo", "stars": 58335, "desc": "Best-benchmarked open-source memory system, and free.", "used": true },
-        { "name": "TencentCloud/TencentDB-Agent-Memory", "url": "https://github.com/TencentCloud/TencentDB-Agent-Memory", "kind": "repo", "stars": 21080, "desc": "Team-level shared memory hub rather than per-developer memory.", "used": false }
-      ]
-    },
-    {
-      "id": "rag-graphs",
-      "title": "RAG & Knowledge Graphs",
-      "blurb": "Getting your own material into the model reliably.",
-      "entries": [
-        { "name": "HKUDS/LightRAG", "url": "https://github.com/HKUDS/LightRAG", "kind": "repo", "stars": 38834, "desc": "Simple, fast, graph-flavoured RAG. The default I'd start from.", "used": true },
-        { "name": "HKUDS/RAG-Anything", "url": "https://github.com/HKUDS/RAG-Anything", "kind": "repo", "stars": 22897, "desc": "All-in-one RAG framework from the same lab when LightRAG isn't enough.", "used": false },
-        { "name": "Graphify-Labs/graphify", "url": "https://github.com/Graphify-Labs/graphify", "kind": "skill", "stars": 105930, "desc": "Turns a codebase plus its docs, schemas and PDFs into a queryable knowledge graph.", "used": true },
-        { "name": "vitali87/code-graph-rag", "url": "https://github.com/vitali87/code-graph-rag", "kind": "repo", "stars": 4169, "desc": "RAG aimed squarely at multi-language monorepos.", "used": false },
-        { "name": "tirth8205/code-review-graph", "url": "https://github.com/tirth8205/code-review-graph", "kind": "mcp", "stars": 29996, "desc": "Local-first persistent map of your codebase, exposed over MCP and CLI.", "used": true },
-        { "name": "langchain-ai/openwiki", "url": "https://github.com/langchain-ai/openwiki", "kind": "cli", "stars": 14994, "desc": "Writes and then maintains agent-facing docs for your repo.", "used": false },
-        { "name": "pgvector/pgvector", "url": "https://github.com/pgvector/pgvector", "kind": "repo", "stars": 22615, "desc": "Vectors inside Postgres. Usually the right answer before you buy a vector DB.", "used": false },
-        { "name": "Chroma", "url": "https://trychroma.com", "kind": "site", "desc": "Easiest local vector store to get running in an afternoon.", "used": false }
-      ]
-    },
-    {
-      "id": "second-brain",
-      "title": "Second Brain & Notes",
-      "blurb": "Where the knowledge lives when it isn't code.",
-      "entries": [
-        { "name": "Obsidian", "url": "https://obsidian.md", "kind": "site", "desc": "Plain markdown on your disk. That's exactly why agents work well against it.", "used": true },
-        { "name": "kepano/obsidian-skills", "url": "https://github.com/kepano/obsidian-skills", "kind": "skill", "stars": 45433, "desc": "Teaches your agent the Obsidian CLI and open formats. From Obsidian's own CEO.", "used": false },
-        { "name": "AgriciDaniel/claude-obsidian", "url": "https://github.com/AgriciDaniel/claude-obsidian", "kind": "skill", "stars": 10834, "desc": "Self-organising second brain — drop any source in and it files itself.", "used": true },
-        { "name": "NotebookLM", "url": "https://notebooklm.google.com", "kind": "site", "desc": "Best free tool for interrogating a pile of sources you didn't write.", "used": true },
-        { "name": "teng-lin/notebooklm-py", "url": "https://github.com/teng-lin/notebooklm-py", "kind": "repo", "stars": 18678, "desc": "Unofficial Python API + skill. Gets you features the web UI doesn't expose.", "used": true },
-        { "name": "pjeby/hot-reload", "url": "https://github.com/pjeby/hot-reload", "kind": "repo", "stars": 953, "desc": "Auto-reloads Obsidian plugins while you build them. Tiny, essential.", "used": false }
-      ]
-    },
-    {
-      "id": "research",
-      "title": "Research & Intelligence",
-      "blurb": "Finding out what's actually true and actually current.",
-      "entries": [
-        { "name": "mvanhorn/last30days-skill", "url": "https://github.com/mvanhorn/last30days-skill", "kind": "skill", "stars": 58076, "desc": "Researches a topic across Reddit, X, YouTube, HN and Polymarket. My most-used research skill.", "used": true },
-        { "name": "Panniantong/Agent-Reach", "url": "https://github.com/Panniantong/Agent-Reach", "kind": "skill", "stars": 71352, "desc": "Gives the agent eyes on Twitter, Reddit and YouTube instead of guessing.", "used": false },
-        { "name": "Firecrawl", "url": "https://firecrawl.dev", "kind": "site", "desc": "Search and scrape the live web at scale, in a format models can read.", "used": true },
-        { "name": "firecrawl/anydoc", "url": "https://github.com/firecrawl/anydoc", "kind": "cli", "stars": 15554, "desc": "Word, PowerPoint, Excel, EPUB, PDF → clean Markdown.", "used": false },
-        { "name": "baidu/Unlimited-OCR", "url": "https://github.com/baidu/Unlimited-OCR", "kind": "repo", "stars": 23651, "desc": "One-shot parsing of very long documents. Good where normal OCR falls over.", "used": true },
-        { "name": "karpathy/autoresearch", "url": "https://github.com/karpathy/autoresearch", "kind": "repo", "stars": 93791, "desc": "Agents running their own research loop. Worth reading even if you never run it.", "used": false },
-        { "name": "koala73/worldmonitor", "url": "https://github.com/koala73/worldmonitor", "kind": "repo", "stars": 81497, "desc": "Real-time news and geopolitical dashboard, AI-aggregated.", "used": false },
-        { "name": "HKUDS/DeepTutor", "url": "https://github.com/HKUDS/DeepTutor", "kind": "repo", "stars": 35396, "desc": "Personalised tutoring that persists across sessions.", "used": false },
-        { "name": "every-app/open-seo", "url": "https://github.com/every-app/open-seo", "kind": "repo", "stars": 11689, "desc": "Open-source answer to Semrush and Ahrefs.", "used": false }
+        {
+          "name": "grill-me-codex",
+          "url": "https://github.com/chaseai-yt/grill-me-codex",
+          "kind": "skill",
+          "desc": "Interviews you until the plan is airtight, then has Codex adversarially attack it before you write code."
+        },
+        {
+          "name": "cloneify",
+          "url": "https://github.com/cth9191/cloneify",
+          "kind": "skill",
+          "desc": "Turns \"I want to clone X\" into a paste-ready build prompt via a gated scope → research → reviewed-plan pipeline."
+        },
+        {
+          "name": "chase-ai-skills",
+          "url": "https://github.com/cth9191/chase-ai-skills",
+          "kind": "repo",
+          "desc": "The skill pack for this community. Plugin marketplace: chase-ai-plus."
+        },
+        {
+          "name": "agentic-os-dashboard",
+          "url": "https://github.com/cth9191/agentic-os-dashboard",
+          "kind": "repo",
+          "desc": "Local cockpit for Claude Code usage — rate limits, activity chart, one-click skill buttons."
+        },
+        {
+          "name": "agentic-os-runner",
+          "url": "https://github.com/cth9191/agentic-os-runner",
+          "kind": "repo",
+          "desc": "Background daemon, hooks and metric-pull templates for running an agentic OS."
+        },
+        {
+          "name": "taste-vault",
+          "url": "https://github.com/cth9191/taste-vault",
+          "kind": "repo",
+          "desc": "Screenshots in, design vocabulary and paste-ready Claude Code briefs out."
+        },
+        {
+          "name": "whisperflow-local",
+          "url": "https://github.com/cth9191/whisperflow-local",
+          "kind": "repo",
+          "desc": "100% local Wispr Flow clone for Windows. Ctrl+Win to dictate, faster-whisper plus a local Ollama cleanup pass."
+        },
+        {
+          "name": "morning-intel",
+          "url": "https://github.com/cth9191/morning-intel",
+          "kind": "skill",
+          "desc": "AI news, X, HN, YouTube, GitHub trending and Gmail triage, ending in an action plan."
+        },
+        {
+          "name": "example-multimodal-rag",
+          "url": "https://github.com/cth9191/example-multimodal-rag",
+          "kind": "repo",
+          "desc": "A worked multimodal RAG example you can read end to end."
+        },
+        {
+          "name": "TweetGod-template",
+          "url": "https://github.com/cth9191/TweetGod-template",
+          "kind": "repo",
+          "desc": "Finds high-potential tweets, sends them to Telegram for approval, posts quote tweets."
+        },
+        {
+          "name": "InboundVoiceAgent",
+          "url": "https://github.com/cth9191/InboundVoiceAgent",
+          "kind": "repo",
+          "desc": "ElevenLabs plus n8n inbound voice agent."
+        },
+        {
+          "name": "UGC-Machine",
+          "url": "https://github.com/cth9191/UGC-Machine",
+          "kind": "repo",
+          "desc": "n8n template for producing AI UGC ads."
+        },
+        {
+          "name": "chase-ai-carousels-template",
+          "url": "https://github.com/cth9191/chase-ai-carousels-template",
+          "kind": "repo",
+          "desc": "Carousel template library plus the Playwright export pipeline behind it."
+        }
       ]
     },
     {
@@ -118,63 +96,199 @@
       "title": "Skill & Plugin Collections",
       "blurb": "Don't write a skill before checking whether someone already did.",
       "entries": [
-        { "name": "obra/superpowers", "url": "https://github.com/obra/superpowers", "kind": "repo", "stars": 271593, "desc": "The biggest agentic-skills framework going, plus an opinionated methodology.", "used": false },
-        { "name": "mattpocock/skills", "url": "https://github.com/mattpocock/skills", "kind": "repo", "stars": 216007, "desc": "Straight out of Matt Pocock's .agents directory. Heavy TypeScript bias, high quality.", "used": true },
-        { "name": "addyosmani/agent-skills", "url": "https://github.com/addyosmani/agent-skills", "kind": "repo", "stars": 86779, "desc": "Production-grade engineering skills from Addy Osmani.", "used": false },
-        { "name": "garrytan/gstack", "url": "https://github.com/garrytan/gstack", "kind": "repo", "stars": 127799, "desc": "Garry Tan's literal Claude Code setup — 23 opinionated tools wired as a team.", "used": false },
-        { "name": "affaan-m/ECC", "url": "https://github.com/affaan-m/ECC", "kind": "repo", "stars": 239889, "desc": "Harness performance system: skills, instincts, memory, security in one bundle.", "used": false },
-        { "name": "HKUDS/OpenSpace", "url": "https://github.com/HKUDS/OpenSpace", "kind": "repo", "stars": 7372, "desc": "A management layer once you have too many skills to keep straight.", "used": true },
-        { "name": "rohitg00/awesome-claude-code-toolkit", "url": "https://github.com/rohitg00/awesome-claude-code-toolkit", "kind": "repo", "stars": 2499, "desc": "135 agents, 35 skills, 42 commands in one place.", "used": false },
-        { "name": "phuryn/pm-skills", "url": "https://github.com/phuryn/pm-skills", "kind": "repo", "stars": 25229, "desc": "Product-management skills — discovery through strategy. Not everything is code.", "used": false },
-        { "name": "coreyhaines31/marketingskills", "url": "https://github.com/coreyhaines31/marketingskills", "kind": "repo", "stars": 44124, "desc": "CRO, copywriting, SEO and growth skills.", "used": false },
-        { "name": "slavingia/skills", "url": "https://github.com/slavingia/skills", "kind": "repo", "stars": 9875, "desc": "Sahil Lavingia's skills, built around The Minimalist Entrepreneur.", "used": false },
-        { "name": "Shubhamsaboo/awesome-llm-apps", "url": "https://github.com/Shubhamsaboo/awesome-llm-apps", "kind": "repo", "stars": 132449, "desc": "100+ agent and RAG apps you can read as worked examples.", "used": false },
-        { "name": "anthropics/claude-cookbooks", "url": "https://github.com/anthropics/claude-cookbooks", "kind": "repo", "stars": 51470, "desc": "Official notebooks. The fastest way to learn a technique properly.", "used": false }
+        {
+          "name": "hesreallyhim/awesome-claude-code",
+          "url": "https://github.com/hesreallyhim/awesome-claude-code",
+          "kind": "repo",
+          "desc": "The big hand-picked community list. Go here when this page doesn't have it."
+        },
+        {
+          "name": "anthropics/claude-plugins-official",
+          "url": "https://github.com/anthropics/claude-plugins-official",
+          "kind": "repo",
+          "desc": "Anthropic-curated plugin directory. Safest place to install from first."
+        },
+        {
+          "name": "anthropics/skills",
+          "url": "https://github.com/anthropics/skills",
+          "kind": "repo",
+          "desc": "Official Agent Skills repo. Read one SKILL.md and you'll understand the whole format."
+        },
+        {
+          "name": "obra/superpowers",
+          "url": "https://github.com/obra/superpowers",
+          "kind": "repo",
+          "desc": "The biggest agentic-skills framework going, plus an opinionated methodology."
+        },
+        {
+          "name": "mattpocock/skills",
+          "url": "https://github.com/mattpocock/skills",
+          "kind": "repo",
+          "desc": "Straight out of Matt Pocock's .agents directory. Heavy TypeScript bias, high quality."
+        },
+        {
+          "name": "addyosmani/agent-skills",
+          "url": "https://github.com/addyosmani/agent-skills",
+          "kind": "repo",
+          "desc": "Production-grade engineering skills from Addy Osmani."
+        },
+        {
+          "name": "garrytan/gstack",
+          "url": "https://github.com/garrytan/gstack",
+          "kind": "repo",
+          "desc": "Garry Tan's literal Claude Code setup — 23 opinionated tools wired as a team."
+        },
+        {
+          "name": "affaan-m/ECC",
+          "url": "https://github.com/affaan-m/ECC",
+          "kind": "repo",
+          "desc": "Harness performance system: skills, instincts, memory, security in one bundle."
+        },
+        {
+          "name": "HKUDS/OpenSpace",
+          "url": "https://github.com/HKUDS/OpenSpace",
+          "kind": "repo",
+          "desc": "A management layer once you have too many skills to keep straight."
+        },
+        {
+          "name": "rohitg00/awesome-claude-code-toolkit",
+          "url": "https://github.com/rohitg00/awesome-claude-code-toolkit",
+          "kind": "repo",
+          "desc": "135 agents, 35 skills, 42 commands in one place."
+        },
+        {
+          "name": "phuryn/pm-skills",
+          "url": "https://github.com/phuryn/pm-skills",
+          "kind": "repo",
+          "desc": "Product-management skills — discovery through strategy. Not everything is code."
+        },
+        {
+          "name": "coreyhaines31/marketingskills",
+          "url": "https://github.com/coreyhaines31/marketingskills",
+          "kind": "repo",
+          "desc": "CRO, copywriting, SEO and growth skills."
+        },
+        {
+          "name": "slavingia/skills",
+          "url": "https://github.com/slavingia/skills",
+          "kind": "repo",
+          "desc": "Sahil Lavingia's skills, built around The Minimalist Entrepreneur."
+        },
+        {
+          "name": "Shubhamsaboo/awesome-llm-apps",
+          "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+          "kind": "repo",
+          "desc": "100+ agent and RAG apps you can read as worked examples."
+        },
+        {
+          "name": "anthropics/claude-cookbooks",
+          "url": "https://github.com/anthropics/claude-cookbooks",
+          "kind": "repo",
+          "desc": "Official notebooks. The fastest way to learn a technique properly."
+        }
       ]
     },
     {
-      "id": "learning",
-      "title": "Learning & Guides",
-      "blurb": "Send these to someone who just installed Claude Code and is staring at a blinking cursor.",
+      "id": "frontend-design",
+      "title": "Frontend & Design",
+      "blurb": "Stopping your agent from producing generic purple-gradient slop.",
       "entries": [
-        { "name": "luongnv89/claude-howto", "url": "https://github.com/luongnv89/claude-howto", "kind": "repo", "stars": 41007, "desc": "Visual, example-driven, basics to advanced agents. Best first stop.", "used": false },
-        { "name": "FlorianBruniaux/claude-code-ultimate-guide", "url": "https://github.com/FlorianBruniaux/claude-code-ultimate-guide", "kind": "repo", "stars": 5719, "desc": "The most complete single guide: workflows, hooks, skills, MCP.", "used": false },
-        { "name": "microsoft/AI-For-Beginners", "url": "https://github.com/microsoft/AI-For-Beginners", "kind": "repo", "stars": 64799, "desc": "12 weeks, 24 lessons. Actual fundamentals, not prompt tricks.", "used": false },
-        { "name": "asgeirtj/system_prompts_leaks", "url": "https://github.com/asgeirtj/system_prompts_leaks", "kind": "repo", "stars": 62824, "desc": "Extracted system prompts. Read them to see how the pros really write instructions.", "used": false }
-      ]
-    },
-    {
-      "id": "agents-orchestration",
-      "title": "Agents & Orchestration",
-      "blurb": "Running more than one agent without losing the plot.",
-      "entries": [
-        { "name": "msitarzewski/agency-agents", "url": "https://github.com/msitarzewski/agency-agents", "kind": "repo", "stars": 145041, "desc": "A whole agency of role-specialised agents, frontend through community.", "used": false },
-        { "name": "stablyai/orca", "url": "https://github.com/stablyai/orca", "kind": "repo", "stars": 44661, "desc": "An IDE for driving a fleet of parallel agents, whichever harness you use.", "used": false },
-        { "name": "openai/codex-plugin-cc", "url": "https://github.com/openai/codex-plugin-cc", "kind": "plugin", "stars": 31810, "desc": "Call Codex from inside Claude Code for reviews and delegated tasks. Two models beat one.", "used": false },
-        { "name": "manaflow-ai/cmux", "url": "https://github.com/manaflow-ai/cmux", "kind": "repo", "stars": 26016, "desc": "Terminal built for running several coding agents at once.", "used": false },
-        { "name": "yc-software/qm", "url": "https://github.com/yc-software/qm", "kind": "repo", "stars": 13391, "desc": "Multiplayer agent harness — built for teams, not solo runs.", "used": false },
-        { "name": "HKUDS/ClawTeam", "url": "https://github.com/HKUDS/ClawTeam", "kind": "repo", "stars": 5483, "desc": "Agent swarm behind a single command.", "used": true },
-        { "name": "gsd-build/gsd-2", "url": "https://github.com/gsd-build/gsd-2", "kind": "repo", "stars": 7761, "desc": "Meta-prompting and spec-driven development. Good if you like a rigid process.", "used": true },
-        { "name": "louislva/claude-peers-mcp", "url": "https://github.com/louislva/claude-peers-mcp", "kind": "mcp", "stars": 2193, "desc": "Lets your separate Claude Code instances talk to each other.", "used": false },
-        { "name": "vercel/eve", "url": "https://github.com/vercel/eve", "kind": "repo", "stars": 4595, "desc": "Vercel's open framework for building agents.", "used": false },
-        { "name": "chaseai-yt/grill-me-codex", "url": "https://github.com/chaseai-yt/grill-me-codex", "kind": "skill", "stars": 1156, "desc": "Mine. Interviews you until the plan is airtight, then makes Codex attack it before you build.", "used": true }
-      ]
-    },
-    {
-      "id": "models-cost",
-      "title": "Models, Routing & Cost",
-      "blurb": "Picking the right model and not overpaying for it.",
-      "entries": [
-        { "name": "OpenRouter", "url": "https://openrouter.ai", "kind": "site", "desc": "One API key, most models. Easiest way to A/B a model without a new account.", "used": true },
-        { "name": "Artificial Analysis", "url": "https://artificialanalysis.ai", "kind": "site", "desc": "Independent speed, cost and quality benchmarks. Check before believing a launch post.", "used": false },
-        { "name": "LLM-Stats", "url": "https://llm-stats.com", "kind": "site", "desc": "Fast side-by-side of price and context window.", "used": false },
-        { "name": "diegosouzapw/OmniRoute", "url": "https://github.com/diegosouzapw/OmniRoute", "kind": "repo", "stars": 47060, "desc": "MIT-licensed gateway: 330+ providers, 1200+ models, many free.", "used": false },
-        { "name": "musistudio/claude-code-router", "url": "https://github.com/musistudio/claude-code-router", "kind": "repo", "stars": 36630, "desc": "One local control plane to route Claude Code across different models.", "used": false },
-        { "name": "BerriAI/litellm", "url": "https://github.com/BerriAI/litellm", "kind": "repo", "stars": 56260, "desc": "The proxy layer most production stacks end up using.", "used": false },
-        { "name": "AlexsJones/llmfit", "url": "https://github.com/AlexsJones/llmfit", "kind": "cli", "stars": 31391, "desc": "One command tells you which models your actual hardware can run.", "used": false },
-        { "name": "Ollama", "url": "https://ollama.com", "kind": "site", "desc": "Local models with the least ceremony.", "used": true },
-        { "name": "LM Studio", "url": "https://lmstudio.ai", "kind": "site", "desc": "Ollama with a GUI. Better for people who don't live in a terminal.", "used": false },
-        { "name": "JustVugg/colibri", "url": "https://github.com/JustVugg/colibri", "kind": "repo", "stars": 24434, "desc": "Runs frontier MoE models on hardware you already own. Pure C, zero deps.", "used": false }
+        {
+          "name": "pbakaus/impeccable",
+          "url": "https://github.com/pbakaus/impeccable",
+          "kind": "skill",
+          "desc": "A design language you drop in so the agent stops defaulting to bootstrap-brain."
+        },
+        {
+          "name": "Leonxlnx/taste-skill",
+          "url": "https://github.com/Leonxlnx/taste-skill",
+          "kind": "skill",
+          "desc": "Gives the model actual taste. The anti-slop skill people mean when they say anti-slop."
+        },
+        {
+          "name": "Nutlope/hallmark",
+          "url": "https://github.com/Nutlope/hallmark",
+          "kind": "skill",
+          "desc": "Same job as the two above, different opinion. Works in Claude Code, Cursor and Codex."
+        },
+        {
+          "name": "VoltAgent/awesome-design-md",
+          "url": "https://github.com/VoltAgent/awesome-design-md",
+          "kind": "repo",
+          "desc": "DESIGN.md files reverse-engineered from real brand systems. Drop one in your repo."
+        },
+        {
+          "name": "google-labs-code/design.md",
+          "url": "https://github.com/google-labs-code/design.md",
+          "kind": "repo",
+          "desc": "The actual spec for describing a visual identity to a coding agent."
+        },
+        {
+          "name": "21st.dev",
+          "url": "https://21st.dev",
+          "kind": "site",
+          "desc": "Component marketplace + MCP so the agent can pull real UI instead of inventing it."
+        },
+        {
+          "name": "shadcn/ui",
+          "url": "https://ui.shadcn.com",
+          "kind": "site",
+          "desc": "The component library most agent-generated React lands on. Know it."
+        },
+        {
+          "name": "shadcn/improve",
+          "url": "https://github.com/shadcn/improve",
+          "kind": "repo",
+          "desc": "Use your best model to audit the codebase, then let a cheap model execute the plan."
+        },
+        {
+          "name": "nexu-io/open-design",
+          "url": "https://github.com/nexu-io/open-design",
+          "kind": "repo",
+          "desc": "Local-first desktop app; open-source take on Claude Design."
+        },
+        {
+          "name": "facebook/astryx",
+          "url": "https://github.com/facebook/astryx",
+          "kind": "repo",
+          "desc": "Open-source design system built to be driven by an agent."
+        },
+        {
+          "name": "alchaincyf/huashu-design",
+          "url": "https://github.com/alchaincyf/huashu-design",
+          "kind": "skill",
+          "desc": "HTML-native design skill — good when you want markup, not a framework."
+        },
+        {
+          "name": "nexu-io/html-anything",
+          "url": "https://github.com/nexu-io/html-anything",
+          "kind": "repo",
+          "desc": "Agentic HTML editor. Agent writes the markup, you ship it."
+        },
+        {
+          "name": "Tailwind CSS",
+          "url": "https://tailwindcss.com",
+          "kind": "site",
+          "desc": "Assume every agent already knows it. Fight this and you'll lose."
+        },
+        {
+          "name": "oil-oil/oil-motion",
+          "url": "https://github.com/oil-oil/oil-motion",
+          "kind": "repo",
+          "desc": "Smooth, responsive web animations without hand-rolling easing curves."
+        },
+        {
+          "name": "Jakubantalik/thinking-orbs",
+          "url": "https://github.com/Jakubantalik/thinking-orbs",
+          "kind": "repo",
+          "desc": "Loading indicators built specifically for AI/agent UIs. Small but you'll want it."
+        },
+        {
+          "name": "Figma",
+          "url": "https://figma.com",
+          "kind": "site",
+          "desc": "Still where the design actually gets decided before code touches it."
+        }
       ]
     },
     {
@@ -182,18 +296,78 @@
       "title": "CLI & Terminal",
       "blurb": "Agents are best at things that have a command line. This is how you give them one.",
       "entries": [
-        { "name": "HKUDS/CLI-Anything", "url": "https://github.com/HKUDS/CLI-Anything", "kind": "repo", "stars": 46963, "desc": "Makes any software agent-native by giving it a CLI. The big idea on this whole page.", "used": true },
-        { "name": "jackwener/OpenCLI", "url": "https://github.com/jackwener/OpenCLI", "kind": "repo", "stars": 28149, "desc": "Turns any website into a CLI, using your already-logged-in browser.", "used": true },
-        { "name": "googleworkspace/cli", "url": "https://github.com/googleworkspace/cli", "kind": "cli", "stars": 30365, "desc": "One command for Drive, Gmail, Calendar, Sheets and Docs. Official.", "used": true },
-        { "name": "iOfficeAI/OfficeCLI", "url": "https://github.com/iOfficeAI/OfficeCLI", "kind": "cli", "stars": 28127, "desc": "Office suite built so agents can read and edit documents directly.", "used": false },
-        { "name": "herdrdev/herdr", "url": "https://github.com/herdrdev/herdr", "kind": "repo", "stars": 28548, "desc": "A runtime for your coding agents to actually live on.", "used": true },
-        { "name": "cli/cli", "url": "https://github.com/cli/cli", "kind": "cli", "stars": 45847, "desc": "GitHub's own CLI. PRs, issues, releases, Actions — all scriptable by an agent.", "used": true },
-        { "name": "anthropics/anthropic-cli", "url": "https://github.com/anthropics/anthropic-cli", "kind": "cli", "stars": 613, "desc": "Official CLI for the Claude API. Handy for quick scripted calls.", "used": false },
-        { "name": "junegunn/fzf", "url": "https://github.com/junegunn/fzf", "kind": "cli", "stars": 82545, "desc": "Fuzzy finder. Rewires how you use a terminal within a day.", "used": false },
-        { "name": "BurntSushi/ripgrep", "url": "https://github.com/BurntSushi/ripgrep", "kind": "cli", "stars": 67293, "desc": "The fast grep. Already what your agent reaches for under the hood.", "used": false },
-        { "name": "jesseduffield/lazygit", "url": "https://github.com/jesseduffield/lazygit", "kind": "cli", "stars": 81296, "desc": "Git you can actually see. Best way to review what an agent just committed.", "used": false },
-        { "name": "sharkdp/bat", "url": "https://github.com/sharkdp/bat", "kind": "cli", "stars": 60227, "desc": "cat with syntax highlighting and line numbers.", "used": true },
-        { "name": "yt-dlp/yt-dlp", "url": "https://github.com/yt-dlp/yt-dlp", "kind": "cli", "stars": 184238, "desc": "Downloads audio and video from nearly anywhere. Backbone of most video pipelines.", "used": false }
+        {
+          "name": "HKUDS/CLI-Anything",
+          "url": "https://github.com/HKUDS/CLI-Anything",
+          "kind": "repo",
+          "desc": "Makes any software agent-native by giving it a CLI. The big idea on this whole page."
+        },
+        {
+          "name": "jackwener/OpenCLI",
+          "url": "https://github.com/jackwener/OpenCLI",
+          "kind": "repo",
+          "desc": "Turns any website into a CLI, using your already-logged-in browser."
+        },
+        {
+          "name": "googleworkspace/cli",
+          "url": "https://github.com/googleworkspace/cli",
+          "kind": "cli",
+          "desc": "One command for Drive, Gmail, Calendar, Sheets and Docs. Official."
+        },
+        {
+          "name": "iOfficeAI/OfficeCLI",
+          "url": "https://github.com/iOfficeAI/OfficeCLI",
+          "kind": "cli",
+          "desc": "Office suite built so agents can read and edit documents directly."
+        },
+        {
+          "name": "herdrdev/herdr",
+          "url": "https://github.com/herdrdev/herdr",
+          "kind": "repo",
+          "desc": "A runtime for your coding agents to actually live on."
+        },
+        {
+          "name": "cli/cli",
+          "url": "https://github.com/cli/cli",
+          "kind": "cli",
+          "desc": "GitHub's own CLI. PRs, issues, releases, Actions — all scriptable by an agent."
+        },
+        {
+          "name": "anthropics/anthropic-cli",
+          "url": "https://github.com/anthropics/anthropic-cli",
+          "kind": "cli",
+          "desc": "Official CLI for the Claude API. Handy for quick scripted calls."
+        },
+        {
+          "name": "junegunn/fzf",
+          "url": "https://github.com/junegunn/fzf",
+          "kind": "cli",
+          "desc": "Fuzzy finder. Rewires how you use a terminal within a day."
+        },
+        {
+          "name": "BurntSushi/ripgrep",
+          "url": "https://github.com/BurntSushi/ripgrep",
+          "kind": "cli",
+          "desc": "The fast grep. Already what your agent reaches for under the hood."
+        },
+        {
+          "name": "jesseduffield/lazygit",
+          "url": "https://github.com/jesseduffield/lazygit",
+          "kind": "cli",
+          "desc": "Git you can actually see. Best way to review what an agent just committed."
+        },
+        {
+          "name": "sharkdp/bat",
+          "url": "https://github.com/sharkdp/bat",
+          "kind": "cli",
+          "desc": "cat with syntax highlighting and line numbers."
+        },
+        {
+          "name": "yt-dlp/yt-dlp",
+          "url": "https://github.com/yt-dlp/yt-dlp",
+          "kind": "cli",
+          "desc": "Downloads audio and video from nearly anywhere. Backbone of most video pipelines."
+        }
       ]
     },
     {
@@ -201,39 +375,354 @@
       "title": "Browser & Web Automation",
       "blurb": "Letting the agent drive a real browser.",
       "entries": [
-        { "name": "Playwright", "url": "https://playwright.dev", "kind": "site", "desc": "The automation library to standardise on. Screenshots, forms, scraping, tests.", "used": true },
-        { "name": "microsoft/playwright-cli", "url": "https://github.com/microsoft/playwright-cli", "kind": "cli", "stars": 12493, "desc": "Record actions and get generated Playwright code back.", "used": true },
-        { "name": "browser-use/browser-harness", "url": "https://github.com/browser-use/browser-harness", "kind": "repo", "stars": 16676, "desc": "Self-healing harness so LLM web tasks survive a changed selector.", "used": false },
-        { "name": "alibaba/page-agent", "url": "https://github.com/alibaba/page-agent", "kind": "repo", "stars": 28614, "desc": "In-page GUI agent — drive a web interface in natural language.", "used": false },
-        { "name": "JCodesMore/ai-website-cloner-template", "url": "https://github.com/JCodesMore/ai-website-cloner-template", "kind": "repo", "stars": 31863, "desc": "Clone any site with one command. Great for studying a layout you like.", "used": true },
-        { "name": "ShawnPana/phone-harness", "url": "https://github.com/ShawnPana/phone-harness", "kind": "repo", "stars": 1703, "desc": "Lets an agent control your actual phone.", "used": false }
+        {
+          "name": "Playwright",
+          "url": "https://playwright.dev",
+          "kind": "site",
+          "desc": "The automation library to standardise on. Screenshots, forms, scraping, tests."
+        },
+        {
+          "name": "microsoft/playwright-cli",
+          "url": "https://github.com/microsoft/playwright-cli",
+          "kind": "cli",
+          "desc": "Record actions and get generated Playwright code back."
+        },
+        {
+          "name": "browser-use/browser-harness",
+          "url": "https://github.com/browser-use/browser-harness",
+          "kind": "repo",
+          "desc": "Self-healing harness so LLM web tasks survive a changed selector."
+        },
+        {
+          "name": "alibaba/page-agent",
+          "url": "https://github.com/alibaba/page-agent",
+          "kind": "repo",
+          "desc": "In-page GUI agent — drive a web interface in natural language."
+        },
+        {
+          "name": "JCodesMore/ai-website-cloner-template",
+          "url": "https://github.com/JCodesMore/ai-website-cloner-template",
+          "kind": "repo",
+          "desc": "Clone any site with one command. Great for studying a layout you like."
+        },
+        {
+          "name": "ShawnPana/phone-harness",
+          "url": "https://github.com/ShawnPana/phone-harness",
+          "kind": "repo",
+          "desc": "Lets an agent control your actual phone."
+        }
       ]
     },
     {
-      "id": "deployment",
-      "title": "Deployment & Infrastructure",
-      "blurb": "Getting it off your laptop.",
+      "id": "context-tokens",
+      "title": "Context & Token Management",
+      "blurb": "The single biggest lever on cost and on whether long sessions stay coherent.",
       "entries": [
-        { "name": "Vercel", "url": "https://vercel.com", "kind": "site", "desc": "Fastest path to a live frontend. The CLI is fully agent-drivable.", "used": true },
-        { "name": "Railway", "url": "https://railway.com", "kind": "site", "desc": "Where I put things that need a real backend and a database.", "used": true },
-        { "name": "Supabase", "url": "https://supabase.com", "kind": "site", "desc": "Postgres, auth, storage and vectors. Usually the whole backend.", "used": true },
-        { "name": "supabase/supabase", "url": "https://github.com/supabase/supabase", "kind": "repo", "stars": 107946, "desc": "Self-host it if you'd rather not rent it.", "used": false },
-        { "name": "Netlify", "url": "https://netlify.com", "kind": "site", "desc": "The other obvious static/edge host.", "used": false },
-        { "name": "Fly.io", "url": "https://fly.io", "kind": "site", "desc": "Containers close to your users, without a Kubernetes hobby.", "used": false },
-        { "name": "Docker", "url": "https://docker.com", "kind": "site", "desc": "Still the unit of \"works on my machine\" being false.", "used": true },
-        { "name": "apple/container", "url": "https://github.com/apple/container", "kind": "repo", "stars": 48925, "desc": "Linux containers on Apple silicon via lightweight VMs. Fast.", "used": false },
-        { "name": "anthropic-experimental/sandbox-runtime", "url": "https://github.com/anthropic-experimental/sandbox-runtime", "kind": "repo", "stars": 4953, "desc": "Filesystem and network limits on agent-run code. Read this before you go autonomous.", "used": false },
-        { "name": "anthropics/claude-code-action", "url": "https://github.com/anthropics/claude-code-action", "kind": "repo", "stars": 8613, "desc": "Runs Claude Code inside GitHub Actions.", "used": false }
+        {
+          "name": "JuliusBrussee/caveman",
+          "url": "https://github.com/JuliusBrussee/caveman",
+          "kind": "skill",
+          "desc": "\"Why use many token when few token do trick.\" Cuts roughly 65% of tokens."
+        },
+        {
+          "name": "DietrichGebert/ponytail",
+          "url": "https://github.com/DietrichGebert/ponytail",
+          "kind": "skill",
+          "desc": "Makes the agent think like the laziest senior dev alive. Best code is the code you don't write."
+        },
+        {
+          "name": "Mibayy/token-savior",
+          "url": "https://github.com/Mibayy/token-savior",
+          "kind": "mcp",
+          "desc": "MCP server that held 97.9% on a real coding benchmark at 80% fewer active tokens."
+        },
+        {
+          "name": "thomaschill/unclog",
+          "url": "https://github.com/thomaschill/unclog",
+          "kind": "cli",
+          "desc": "Audits which MCP servers, skills and CLAUDE.md bloat are eating your context window."
+        },
+        {
+          "name": "DeusData/codebase-memory-mcp",
+          "url": "https://github.com/DeusData/codebase-memory-mcp",
+          "kind": "mcp",
+          "desc": "Indexes a codebase into a persistent knowledge graph so the agent stops re-reading everything."
+        },
+        {
+          "name": "MemPalace/mempalace",
+          "url": "https://github.com/MemPalace/mempalace",
+          "kind": "repo",
+          "desc": "Best-benchmarked open-source memory system, and free."
+        },
+        {
+          "name": "TencentCloud/TencentDB-Agent-Memory",
+          "url": "https://github.com/TencentCloud/TencentDB-Agent-Memory",
+          "kind": "repo",
+          "desc": "Team-level shared memory hub rather than per-developer memory."
+        }
       ]
     },
     {
-      "id": "security-review",
-      "title": "Security & Code Review",
-      "blurb": "The part people skip right up until they can't.",
+      "id": "rag-graphs",
+      "title": "RAG & Knowledge Graphs",
+      "blurb": "Getting your own material into the model reliably.",
       "entries": [
-        { "name": "usestrix/strix", "url": "https://github.com/usestrix/strix", "kind": "repo", "stars": 51751, "desc": "Open-source AI pentesting against your own app. Finds and helps fix.", "used": false },
-        { "name": "alibaba/open-code-review", "url": "https://github.com/alibaba/open-code-review", "kind": "repo", "stars": 20384, "desc": "Battle-tested at Alibaba scale. Hybrid static + model review.", "used": false },
-        { "name": "anthropics/defending-code-reference-harness", "url": "https://github.com/anthropics/defending-code-reference-harness", "kind": "repo", "stars": 7027, "desc": "Threat modelling, scanning, triage and patching skills from Anthropic.", "used": false }
+        {
+          "name": "HKUDS/LightRAG",
+          "url": "https://github.com/HKUDS/LightRAG",
+          "kind": "repo",
+          "desc": "Simple, fast, graph-flavoured RAG. The default I'd start from."
+        },
+        {
+          "name": "HKUDS/RAG-Anything",
+          "url": "https://github.com/HKUDS/RAG-Anything",
+          "kind": "repo",
+          "desc": "All-in-one RAG framework from the same lab when LightRAG isn't enough."
+        },
+        {
+          "name": "Graphify-Labs/graphify",
+          "url": "https://github.com/Graphify-Labs/graphify",
+          "kind": "skill",
+          "desc": "Turns a codebase plus its docs, schemas and PDFs into a queryable knowledge graph."
+        },
+        {
+          "name": "vitali87/code-graph-rag",
+          "url": "https://github.com/vitali87/code-graph-rag",
+          "kind": "repo",
+          "desc": "RAG aimed squarely at multi-language monorepos."
+        },
+        {
+          "name": "tirth8205/code-review-graph",
+          "url": "https://github.com/tirth8205/code-review-graph",
+          "kind": "mcp",
+          "desc": "Local-first persistent map of your codebase, exposed over MCP and CLI."
+        },
+        {
+          "name": "langchain-ai/openwiki",
+          "url": "https://github.com/langchain-ai/openwiki",
+          "kind": "cli",
+          "desc": "Writes and then maintains agent-facing docs for your repo."
+        },
+        {
+          "name": "pgvector/pgvector",
+          "url": "https://github.com/pgvector/pgvector",
+          "kind": "repo",
+          "desc": "Vectors inside Postgres. Usually the right answer before you buy a vector DB."
+        },
+        {
+          "name": "Chroma",
+          "url": "https://trychroma.com",
+          "kind": "site",
+          "desc": "Easiest local vector store to get running in an afternoon."
+        }
+      ]
+    },
+    {
+      "id": "second-brain",
+      "title": "Second Brain & Notes",
+      "blurb": "Where the knowledge lives when it isn't code.",
+      "entries": [
+        {
+          "name": "Obsidian",
+          "url": "https://obsidian.md",
+          "kind": "site",
+          "desc": "Plain markdown on your disk. That's exactly why agents work well against it."
+        },
+        {
+          "name": "kepano/obsidian-skills",
+          "url": "https://github.com/kepano/obsidian-skills",
+          "kind": "skill",
+          "desc": "Teaches your agent the Obsidian CLI and open formats. From Obsidian's own CEO."
+        },
+        {
+          "name": "AgriciDaniel/claude-obsidian",
+          "url": "https://github.com/AgriciDaniel/claude-obsidian",
+          "kind": "skill",
+          "desc": "Self-organising second brain — drop any source in and it files itself."
+        },
+        {
+          "name": "NotebookLM",
+          "url": "https://notebooklm.google.com",
+          "kind": "site",
+          "desc": "Best free tool for interrogating a pile of sources you didn't write."
+        },
+        {
+          "name": "teng-lin/notebooklm-py",
+          "url": "https://github.com/teng-lin/notebooklm-py",
+          "kind": "repo",
+          "desc": "Unofficial Python API + skill. Gets you features the web UI doesn't expose."
+        },
+        {
+          "name": "pjeby/hot-reload",
+          "url": "https://github.com/pjeby/hot-reload",
+          "kind": "repo",
+          "desc": "Auto-reloads Obsidian plugins while you build them. Tiny, essential."
+        }
+      ]
+    },
+    {
+      "id": "diagrams",
+      "title": "Diagrams & Visual Explainers",
+      "blurb": "For when the answer is a picture, not a paragraph.",
+      "entries": [
+        {
+          "name": "cathrynlavery/diagram-design",
+          "url": "https://github.com/cathrynlavery/diagram-design",
+          "kind": "skill",
+          "desc": "29 editorial diagram types as clean HTML+SVG. No Mermaid look, no drop shadows."
+        },
+        {
+          "name": "tt-a1i/archify",
+          "url": "https://github.com/tt-a1i/archify",
+          "kind": "skill",
+          "desc": "Architecture, sequence, data-flow and lifecycle diagrams that are actually verifiable."
+        },
+        {
+          "name": "coleam00/excalidraw-diagram-skill",
+          "url": "https://github.com/coleam00/excalidraw-diagram-skill",
+          "kind": "skill",
+          "desc": "Makes any coding agent produce real Excalidraw files."
+        },
+        {
+          "name": "yizhiyanhua-ai/fireworks-tech-graph",
+          "url": "https://github.com/yizhiyanhua-ai/fireworks-tech-graph",
+          "kind": "skill",
+          "desc": "Natural language in, production-quality SVG/PNG technical diagrams out."
+        },
+        {
+          "name": "Excalidraw",
+          "url": "https://excalidraw.com",
+          "kind": "site",
+          "desc": "The hand-drawn whiteboard. Fastest path from head to shareable picture."
+        },
+        {
+          "name": "Mermaid",
+          "url": "https://mermaid.js.org",
+          "kind": "site",
+          "desc": "Diagrams as text. Renders natively in GitHub and most docs tools."
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "title": "Research & Intelligence",
+      "blurb": "Finding out what's actually true and actually current.",
+      "entries": [
+        {
+          "name": "mvanhorn/last30days-skill",
+          "url": "https://github.com/mvanhorn/last30days-skill",
+          "kind": "skill",
+          "desc": "Researches a topic across Reddit, X, YouTube, HN and Polymarket. My most-used research skill."
+        },
+        {
+          "name": "Panniantong/Agent-Reach",
+          "url": "https://github.com/Panniantong/Agent-Reach",
+          "kind": "skill",
+          "desc": "Gives the agent eyes on Twitter, Reddit and YouTube instead of guessing."
+        },
+        {
+          "name": "Firecrawl",
+          "url": "https://firecrawl.dev",
+          "kind": "site",
+          "desc": "Search and scrape the live web at scale, in a format models can read."
+        },
+        {
+          "name": "firecrawl/anydoc",
+          "url": "https://github.com/firecrawl/anydoc",
+          "kind": "cli",
+          "desc": "Word, PowerPoint, Excel, EPUB, PDF → clean Markdown."
+        },
+        {
+          "name": "baidu/Unlimited-OCR",
+          "url": "https://github.com/baidu/Unlimited-OCR",
+          "kind": "repo",
+          "desc": "One-shot parsing of very long documents. Good where normal OCR falls over."
+        },
+        {
+          "name": "karpathy/autoresearch",
+          "url": "https://github.com/karpathy/autoresearch",
+          "kind": "repo",
+          "desc": "Agents running their own research loop. Worth reading even if you never run it."
+        },
+        {
+          "name": "koala73/worldmonitor",
+          "url": "https://github.com/koala73/worldmonitor",
+          "kind": "repo",
+          "desc": "Real-time news and geopolitical dashboard, AI-aggregated."
+        },
+        {
+          "name": "HKUDS/DeepTutor",
+          "url": "https://github.com/HKUDS/DeepTutor",
+          "kind": "repo",
+          "desc": "Personalised tutoring that persists across sessions."
+        },
+        {
+          "name": "every-app/open-seo",
+          "url": "https://github.com/every-app/open-seo",
+          "kind": "repo",
+          "desc": "Open-source answer to Semrush and Ahrefs."
+        }
+      ]
+    },
+    {
+      "id": "agents-orchestration",
+      "title": "Agents & Orchestration",
+      "blurb": "Running more than one agent without losing the plot.",
+      "entries": [
+        {
+          "name": "msitarzewski/agency-agents",
+          "url": "https://github.com/msitarzewski/agency-agents",
+          "kind": "repo",
+          "desc": "A whole agency of role-specialised agents, frontend through community."
+        },
+        {
+          "name": "stablyai/orca",
+          "url": "https://github.com/stablyai/orca",
+          "kind": "repo",
+          "desc": "An IDE for driving a fleet of parallel agents, whichever harness you use."
+        },
+        {
+          "name": "openai/codex-plugin-cc",
+          "url": "https://github.com/openai/codex-plugin-cc",
+          "kind": "plugin",
+          "desc": "Call Codex from inside Claude Code for reviews and delegated tasks. Two models beat one."
+        },
+        {
+          "name": "manaflow-ai/cmux",
+          "url": "https://github.com/manaflow-ai/cmux",
+          "kind": "repo",
+          "desc": "Terminal built for running several coding agents at once."
+        },
+        {
+          "name": "yc-software/qm",
+          "url": "https://github.com/yc-software/qm",
+          "kind": "repo",
+          "desc": "Multiplayer agent harness — built for teams, not solo runs."
+        },
+        {
+          "name": "HKUDS/ClawTeam",
+          "url": "https://github.com/HKUDS/ClawTeam",
+          "kind": "repo",
+          "desc": "Agent swarm behind a single command."
+        },
+        {
+          "name": "louislva/claude-peers-mcp",
+          "url": "https://github.com/louislva/claude-peers-mcp",
+          "kind": "mcp",
+          "desc": "Lets your separate Claude Code instances talk to each other."
+        },
+        {
+          "name": "vercel/eve",
+          "url": "https://github.com/vercel/eve",
+          "kind": "repo",
+          "desc": "Vercel's open framework for building agents."
+        },
+        {
+          "name": "chaseai-yt/grill-me-codex",
+          "url": "https://github.com/chaseai-yt/grill-me-codex",
+          "kind": "skill",
+          "desc": "Mine. Interviews you until the plan is airtight, then makes Codex attack it before you build."
+        }
       ]
     },
     {
@@ -241,16 +730,72 @@
       "title": "Video, Audio & Content",
       "blurb": "Turning work into something people can watch.",
       "entries": [
-        { "name": "calesthio/OpenMontage", "url": "https://github.com/calesthio/OpenMontage", "kind": "repo", "stars": 47914, "desc": "Agentic video production — 12 pipelines, 100+ operations.", "used": false },
-        { "name": "bradautomates/claude-video", "url": "https://github.com/bradautomates/claude-video", "kind": "skill", "stars": 15283, "desc": "/watch downloads a video, pulls frames and transcribes it. Claude can finally see video.", "used": true },
-        { "name": "Higgsfield", "url": "https://higgsfield.ai", "kind": "site", "desc": "Image and video generation I use for covers and B-roll.", "used": true },
-        { "name": "Remotion", "url": "https://remotion.dev", "kind": "site", "desc": "Video as React components. Programmatic, diffable, repeatable.", "used": true },
-        { "name": "diffusionstudio/lottie", "url": "https://github.com/diffusionstudio/lottie", "kind": "skill", "stars": 5207, "desc": "Production-ready Lottie animations straight out of Claude Code or Codex.", "used": true },
-        { "name": "op7418/guizang-ppt-skill", "url": "https://github.com/op7418/guizang-ppt-skill", "kind": "skill", "stars": 23935, "desc": "Genuinely good-looking HTML slide decks — editorial and Swiss layouts.", "used": false },
-        { "name": "ElevenLabs", "url": "https://elevenlabs.io", "kind": "site", "desc": "Voiceover that doesn't sound like 2023.", "used": false },
-        { "name": "Zackriya-Solutions/meetily", "url": "https://github.com/Zackriya-Solutions/meetily", "kind": "repo", "stars": 29035, "desc": "Privacy-first meeting notes. Live transcription, runs locally.", "used": false },
-        { "name": "img2threejs/img2threejs", "url": "https://github.com/img2threejs/img2threejs", "kind": "skill", "stars": 11562, "desc": "Reference image → animation-ready procedural Three.js. Genuinely surprising.", "used": true },
-        { "name": "oso95/scroll-world", "url": "https://github.com/oso95/scroll-world", "kind": "skill", "stars": 8116, "desc": "Turns a brand into a scrollable 3D world landing page.", "used": true }
+        {
+          "name": "calesthio/OpenMontage",
+          "url": "https://github.com/calesthio/OpenMontage",
+          "kind": "repo",
+          "desc": "Agentic video production — 12 pipelines, 100+ operations."
+        },
+        {
+          "name": "bradautomates/claude-video",
+          "url": "https://github.com/bradautomates/claude-video",
+          "kind": "skill",
+          "desc": "/watch downloads a video, pulls frames and transcribes it. Claude can finally see video."
+        },
+        {
+          "name": "Higgsfield",
+          "url": "https://higgsfield.ai",
+          "kind": "site",
+          "desc": "Image and video generation I use for covers and B-roll."
+        },
+        {
+          "name": "Remotion",
+          "url": "https://remotion.dev",
+          "kind": "site",
+          "desc": "Video as React components. Programmatic, diffable, repeatable."
+        },
+        {
+          "name": "diffusionstudio/lottie",
+          "url": "https://github.com/diffusionstudio/lottie",
+          "kind": "skill",
+          "desc": "Production-ready Lottie animations straight out of Claude Code or Codex."
+        },
+        {
+          "name": "op7418/guizang-ppt-skill",
+          "url": "https://github.com/op7418/guizang-ppt-skill",
+          "kind": "skill",
+          "desc": "Genuinely good-looking HTML slide decks — editorial and Swiss layouts."
+        },
+        {
+          "name": "ElevenLabs",
+          "url": "https://elevenlabs.io",
+          "kind": "site",
+          "desc": "Voiceover that doesn't sound like 2023."
+        },
+        {
+          "name": "Zackriya-Solutions/meetily",
+          "url": "https://github.com/Zackriya-Solutions/meetily",
+          "kind": "repo",
+          "desc": "Privacy-first meeting notes. Live transcription, runs locally."
+        },
+        {
+          "name": "img2threejs/img2threejs",
+          "url": "https://github.com/img2threejs/img2threejs",
+          "kind": "skill",
+          "desc": "Reference image → animation-ready procedural Three.js. Genuinely surprising."
+        },
+        {
+          "name": "oso95/scroll-world",
+          "url": "https://github.com/oso95/scroll-world",
+          "kind": "skill",
+          "desc": "Turns a brand into a scrollable 3D world landing page."
+        },
+        {
+          "name": "beshuaxian/higgsfield-seedance2-jineng",
+          "url": "https://github.com/beshuaxian/higgsfield-seedance2-jineng",
+          "kind": "skill",
+          "desc": "15 Seedance 2.0 × Higgsfield video skills — hook framework, camera encyclopedia, production prompts."
+        }
       ]
     },
     {
@@ -258,9 +803,110 @@
       "title": "Voice & Dictation",
       "blurb": "Talking to your machine is roughly 3x faster than typing at it.",
       "entries": [
-        { "name": "bubnyukab/whisperflow-windows", "url": "https://github.com/bubnyukab/whisperflow-windows", "kind": "repo", "desc": "Local, offline Wispr Flow alternative for Windows. Free, no account.", "used": true },
-        { "name": "drajb/whisper-local", "url": "https://github.com/drajb/whisper-local", "kind": "repo", "stars": 22, "desc": "Offline dictation for Windows and macOS. Small project, does the job.", "used": true },
-        { "name": "huggingface/speech-to-speech", "url": "https://github.com/huggingface/speech-to-speech", "kind": "repo", "stars": 12472, "desc": "Build a local voice agent from open models.", "used": false }
+        {
+          "name": "PinW/whisper-key-local",
+          "url": "https://github.com/PinW/whisper-key-local",
+          "kind": "repo",
+          "desc": "Global hotkey to record speech and transcribe straight to your cursor. Runs locally."
+        },
+        {
+          "name": "huggingface/speech-to-speech",
+          "url": "https://github.com/huggingface/speech-to-speech",
+          "kind": "repo",
+          "desc": "Build a local voice agent from open models."
+        }
+      ]
+    },
+    {
+      "id": "deployment",
+      "title": "Deployment & Infrastructure",
+      "blurb": "Getting it off your laptop.",
+      "entries": [
+        {
+          "name": "Vercel",
+          "url": "https://vercel.com",
+          "kind": "site",
+          "desc": "Fastest path to a live frontend. The CLI is fully agent-drivable."
+        },
+        {
+          "name": "Railway",
+          "url": "https://railway.com",
+          "kind": "site",
+          "desc": "Where I put things that need a real backend and a database."
+        },
+        {
+          "name": "Supabase",
+          "url": "https://supabase.com",
+          "kind": "site",
+          "desc": "Postgres, auth, storage and vectors. Usually the whole backend."
+        },
+        {
+          "name": "supabase/supabase",
+          "url": "https://github.com/supabase/supabase",
+          "kind": "repo",
+          "desc": "Self-host it if you'd rather not rent it."
+        },
+        {
+          "name": "Netlify",
+          "url": "https://netlify.com",
+          "kind": "site",
+          "desc": "The other obvious static/edge host."
+        },
+        {
+          "name": "Fly.io",
+          "url": "https://fly.io",
+          "kind": "site",
+          "desc": "Containers close to your users, without a Kubernetes hobby."
+        },
+        {
+          "name": "Docker",
+          "url": "https://docker.com",
+          "kind": "site",
+          "desc": "Still the unit of \"works on my machine\" being false."
+        },
+        {
+          "name": "apple/container",
+          "url": "https://github.com/apple/container",
+          "kind": "repo",
+          "desc": "Linux containers on Apple silicon via lightweight VMs. Fast."
+        },
+        {
+          "name": "anthropic-experimental/sandbox-runtime",
+          "url": "https://github.com/anthropic-experimental/sandbox-runtime",
+          "kind": "repo",
+          "desc": "Filesystem and network limits on agent-run code. Read this before you go autonomous."
+        },
+        {
+          "name": "anthropics/claude-code-action",
+          "url": "https://github.com/anthropics/claude-code-action",
+          "kind": "repo",
+          "desc": "Runs Claude Code inside GitHub Actions."
+        }
+      ]
+    },
+    {
+      "id": "security-review",
+      "title": "Security & Code Review",
+      "blurb": "The part people skip right up until they can't.",
+      "entries": [
+        {
+          "name": "usestrix/strix",
+          "url": "https://github.com/usestrix/strix",
+          "kind": "repo",
+          "desc": "Open-source AI pentesting against your own app. Finds and helps fix."
+        },
+        {
+          "name": "alibaba/open-code-review",
+          "url": "https://github.com/alibaba/open-code-review",
+          "kind": "repo",
+          "desc": "Battle-tested at Alibaba scale. Hybrid static + model review."
+        },
+        {
+          "name": "anthropics/defending-code-reference-harness",
+          "url": "https://github.com/anthropics/defending-code-reference-harness",
+          "kind": "repo",
+          "desc": "Threat modelling, scanning, triage and patching skills from Anthropic."
+        }
       ]
     },
     {
@@ -268,12 +914,79 @@
       "title": "Work, Career & Ops",
       "blurb": "Agents pointed at things that aren't code.",
       "entries": [
-        { "name": "paperclipai/paperclip", "url": "https://github.com/paperclipai/paperclip", "kind": "repo", "stars": 77994, "desc": "Managing agents as actual coworkers. Open source.", "used": true },
-        { "name": "santifer/career-ops", "url": "https://github.com/santifer/career-ops", "kind": "repo", "stars": 63710, "desc": "Scans job boards and grades listings against a structured A-F rubric.", "used": true },
-        { "name": "MadsLorentzen/ai-job-search", "url": "https://github.com/MadsLorentzen/ai-job-search", "kind": "repo", "stars": 31482, "desc": "The same idea, running entirely on your machine.", "used": false },
-        { "name": "interviewstreet/hiring-agent", "url": "https://github.com/interviewstreet/hiring-agent", "kind": "repo", "stars": 6874, "desc": "Scores resumes. Useful from either side of the table.", "used": false },
-        { "name": "n8n", "url": "https://n8n.io", "kind": "site", "desc": "Self-hostable automation. The glue when a skill isn't the right shape.", "used": true },
-        { "name": "Composio", "url": "https://composio.dev", "kind": "site", "desc": "Pre-built tool integrations so you don't write another OAuth flow.", "used": false }
+        {
+          "name": "paperclipai/paperclip",
+          "url": "https://github.com/paperclipai/paperclip",
+          "kind": "repo",
+          "desc": "Managing agents as actual coworkers. Open source."
+        },
+        {
+          "name": "santifer/career-ops",
+          "url": "https://github.com/santifer/career-ops",
+          "kind": "repo",
+          "desc": "Scans job boards and grades listings against a structured A-F rubric."
+        },
+        {
+          "name": "MadsLorentzen/ai-job-search",
+          "url": "https://github.com/MadsLorentzen/ai-job-search",
+          "kind": "repo",
+          "desc": "The same idea, running entirely on your machine."
+        },
+        {
+          "name": "interviewstreet/hiring-agent",
+          "url": "https://github.com/interviewstreet/hiring-agent",
+          "kind": "repo",
+          "desc": "Scores resumes. Useful from either side of the table."
+        },
+        {
+          "name": "n8n",
+          "url": "https://n8n.io",
+          "kind": "site",
+          "desc": "Self-hostable automation. The glue when a skill isn't the right shape."
+        },
+        {
+          "name": "Composio",
+          "url": "https://composio.dev",
+          "kind": "site",
+          "desc": "Pre-built tool integrations so you don't write another OAuth flow."
+        }
+      ]
+    },
+    {
+      "id": "learning",
+      "title": "Learning & Guides",
+      "blurb": "Send these to someone who just installed Claude Code and is staring at a blinking cursor.",
+      "entries": [
+        {
+          "name": "luongnv89/claude-howto",
+          "url": "https://github.com/luongnv89/claude-howto",
+          "kind": "repo",
+          "desc": "Visual, example-driven, basics to advanced agents. Best first stop."
+        },
+        {
+          "name": "FlorianBruniaux/claude-code-ultimate-guide",
+          "url": "https://github.com/FlorianBruniaux/claude-code-ultimate-guide",
+          "kind": "repo",
+          "desc": "The most complete single guide: workflows, hooks, skills, MCP."
+        },
+        {
+          "name": "microsoft/AI-For-Beginners",
+          "url": "https://github.com/microsoft/AI-For-Beginners",
+          "kind": "repo",
+          "desc": "12 weeks, 24 lessons. Actual fundamentals, not prompt tricks."
+        },
+        {
+          "name": "asgeirtj/system_prompts_leaks",
+          "url": "https://github.com/asgeirtj/system_prompts_leaks",
+          "kind": "repo",
+          "desc": "Extracted system prompts. Read them to see how the pros really write instructions."
+        },
+        {
+          "name": "Model Context Protocol",
+          "url": "https://modelcontextprotocol.io",
+          "kind": "site",
+          "desc": "The spec behind MCP servers. Worth 20 minutes before you install your first one."
+        }
       ]
     },
     {
@@ -281,11 +994,103 @@
       "title": "Editors & Harnesses",
       "blurb": "Where you sit while the agent works.",
       "entries": [
-        { "name": "Cursor", "url": "https://cursor.com", "kind": "site", "desc": "The IDE most people arrive from. Still excellent at inline edits.", "used": true },
-        { "name": "Zed", "url": "https://zed.dev", "kind": "site", "desc": "Very fast, collaborative, increasingly agent-native.", "used": false },
-        { "name": "openai/codex", "url": "https://github.com/openai/codex", "kind": "repo", "stars": 105701, "desc": "OpenAI's terminal agent. Best used as a second opinion on Claude's work.", "used": true },
-        { "name": "xai-org/grok-build", "url": "https://github.com/xai-org/grok-build", "kind": "repo", "stars": 24997, "desc": "xAI's harness and TUI. Fullscreen, mouse-interactive, extensible.", "used": false },
-        { "name": "Warp", "url": "https://warp.dev", "kind": "site", "desc": "Terminal with agent features baked in rather than bolted on.", "used": false }
+        {
+          "name": "Cursor",
+          "url": "https://cursor.com",
+          "kind": "site",
+          "desc": "The IDE most people arrive from. Still excellent at inline edits."
+        },
+        {
+          "name": "Zed",
+          "url": "https://zed.dev",
+          "kind": "site",
+          "desc": "Very fast, collaborative, increasingly agent-native."
+        },
+        {
+          "name": "openai/codex",
+          "url": "https://github.com/openai/codex",
+          "kind": "repo",
+          "desc": "OpenAI's terminal agent. Best used as a second opinion on Claude's work."
+        },
+        {
+          "name": "xai-org/grok-build",
+          "url": "https://github.com/xai-org/grok-build",
+          "kind": "repo",
+          "desc": "xAI's harness and TUI. Fullscreen, mouse-interactive, extensible."
+        },
+        {
+          "name": "Warp",
+          "url": "https://warp.dev",
+          "kind": "site",
+          "desc": "Terminal with agent features baked in rather than bolted on."
+        }
+      ]
+    },
+    {
+      "id": "models-cost",
+      "title": "Models, Routing & Cost",
+      "blurb": "Picking the right model and not overpaying for it.",
+      "entries": [
+        {
+          "name": "OpenRouter",
+          "url": "https://openrouter.ai",
+          "kind": "site",
+          "desc": "One API key, most models. Easiest way to A/B a model without a new account."
+        },
+        {
+          "name": "Artificial Analysis",
+          "url": "https://artificialanalysis.ai",
+          "kind": "site",
+          "desc": "Independent speed, cost and quality benchmarks. Check before believing a launch post."
+        },
+        {
+          "name": "LLM-Stats",
+          "url": "https://llm-stats.com",
+          "kind": "site",
+          "desc": "Fast side-by-side of price and context window."
+        },
+        {
+          "name": "diegosouzapw/OmniRoute",
+          "url": "https://github.com/diegosouzapw/OmniRoute",
+          "kind": "repo",
+          "desc": "MIT-licensed gateway: 330+ providers, 1200+ models, many free."
+        },
+        {
+          "name": "musistudio/claude-code-router",
+          "url": "https://github.com/musistudio/claude-code-router",
+          "kind": "repo",
+          "desc": "One local control plane to route Claude Code across different models."
+        },
+        {
+          "name": "BerriAI/litellm",
+          "url": "https://github.com/BerriAI/litellm",
+          "kind": "repo",
+          "desc": "The proxy layer most production stacks end up using."
+        },
+        {
+          "name": "AlexsJones/llmfit",
+          "url": "https://github.com/AlexsJones/llmfit",
+          "kind": "cli",
+          "desc": "One command tells you which models your actual hardware can run."
+        },
+        {
+          "name": "Ollama",
+          "url": "https://ollama.com",
+          "kind": "site",
+          "desc": "Local models with the least ceremony."
+        },
+        {
+          "name": "LM Studio",
+          "url": "https://lmstudio.ai",
+          "kind": "site",
+          "desc": "Ollama with a GUI. Better for people who don't live in a terminal."
+        },
+        {
+          "name": "JustVugg/colibri",
+          "url": "https://github.com/JustVugg/colibri",
+          "kind": "repo",
+          "desc": "Runs frontier MoE models on hardware you already own. Pure C, zero deps."
+        }
       ]
     }
   ]

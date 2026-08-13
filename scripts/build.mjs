@@ -11,16 +11,14 @@ const data = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'tools.json'), '
 const { meta, domains } = data;
 
 const totalEntries = domains.reduce((n, d) => n + d.entries.length, 0);
-const usedCount = domains.reduce((n, d) => n + d.entries.filter(e => e.used).length, 0);
 
-const stars = (n) => (n == null ? '' : n >= 1000 ? `${(n / 1000).toFixed(1).replace(/\.0$/, '')}k` : String(n));
 const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 
 // ---------- README.md ----------
 function buildReadme() {
   const L = [];
   L.push(`# ${meta.title}`, '', `**${meta.tagline}**`, '');
-  L.push(`${totalEntries} tools across ${domains.length} domains. **★ = I've actually used it** (${usedCount} of them), everything else is verified and worth knowing about.`, '');
+  L.push(`${totalEntries} curated skills, repos and tools across ${domains.length} domains.`, '');
   L.push(`> ${meta.note}`, '');
   L.push('## Contents', '');
   for (const d of domains) {
@@ -30,12 +28,10 @@ function buildReadme() {
   for (const d of domains) {
     L.push(`<a id="${d.id}"></a>`, '');
     L.push(`## ${d.title}`, '', `*${d.blurb}*`, '');
-    L.push('| | Tool | What it’s for |');
-    L.push('|---|---|---|');
+    L.push('| Tool | What it’s for |');
+    L.push('|---|---|');
     for (const e of d.entries) {
-      const mark = e.used ? '★' : '';
-      const st = e.stars ? ` <sub>⭐${stars(e.stars)}</sub>` : '';
-      L.push(`| ${mark} | [${e.name}](${e.url})${st} | ${e.desc} |`);
+      L.push(`| [${e.name}](${e.url}) | ${e.desc} |`);
     }
     L.push('');
   }
@@ -59,7 +55,7 @@ function buildSkool() {
   const H = [];
   H.push(`<h1>${esc(meta.title)}</h1>`);
   H.push(`<p><strong>${esc(meta.tagline)}</strong></p>`);
-  H.push(`<p>${totalEntries} tools across ${domains.length} domains. A ★ means I've actually used it, not just bookmarked it. Every link was checked on ${esc(meta.starsAsOf)}.</p>`);
+  H.push(`<p>${totalEntries} curated skills, repos and tools across ${domains.length} domains. Every link checked ${esc(meta.starsAsOf)}.</p>`);
   H.push(`<p><em>Jump to what you're trying to do:</em> ${domains.map(d => esc(d.title)).join(' &middot; ')}</p>`);
   H.push('<hr>');
   for (const d of domains) {
@@ -67,8 +63,7 @@ function buildSkool() {
     H.push(`<p><em>${esc(d.blurb)}</em></p>`);
     H.push('<ul>');
     for (const e of d.entries) {
-      const mark = e.used ? '★ ' : '';
-      H.push(`<li>${mark}<a href="${esc(e.url)}"><strong>${esc(e.name)}</strong></a> — ${esc(e.desc)}</li>`);
+      H.push(`<li><a href="${esc(e.url)}"><strong>${esc(e.name)}</strong></a> — ${esc(e.desc)}</li>`);
     }
     H.push('</ul>');
   }
@@ -84,13 +79,12 @@ function buildText() {
   const L = [];
   L.push(meta.title.toUpperCase());
   L.push(meta.tagline, '');
-  L.push(`${totalEntries} tools across ${domains.length} domains.`);
-  L.push(`★ = I've actually used it, not just bookmarked it.`);
+  L.push(`${totalEntries} curated skills, repos and tools across ${domains.length} domains.`);
   L.push(`Every link checked ${meta.starsAsOf}.`);
   for (const d of domains) {
     L.push('', '─────────────────────────────', `${d.title.toUpperCase()}`, d.blurb, '');
     for (const e of d.entries) {
-      L.push(`${e.used ? '★ ' : ''}${e.name} — ${e.desc}`);
+      L.push(`${e.name} — ${e.desc}`);
       L.push(e.url, '');
     }
   }
@@ -104,7 +98,7 @@ fs.mkdirSync(path.join(ROOT, 'dist'), { recursive: true });
 fs.writeFileSync(path.join(ROOT, 'dist', 'skool.html'), buildSkool());
 fs.writeFileSync(path.join(ROOT, 'dist', 'skool.txt'), buildText());
 
-console.log(`built: ${totalEntries} entries / ${domains.length} domains / ${usedCount} marked as used`);
+console.log(`built: ${totalEntries} entries / ${domains.length} domains`);
 console.log('  README.md');
 console.log('  dist/skool.html');
 console.log('  dist/skool.txt');
