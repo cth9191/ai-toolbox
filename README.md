@@ -9,10 +9,10 @@
 ## Contents
 
 - [My Skills](#chase-originals) — The ones I built that are worth your time.
-- [Skill & Plugin Collections](#skills-collections) — Don't write a skill before checking whether someone already did.
 - [Frontend & Design](#frontend-design) — Stopping your agent from producing generic purple-gradient slop.
 - [CLI & Terminal](#cli) — Agents are best at things that have a command line. This is how you give them one.
 - [Browser & Web Automation](#browser-automation) — Letting the agent drive a real browser.
+- [Skill & Plugin Collections](#skills-collections) — Don't write a skill before checking whether someone already did.
 - [Context & Token Management](#context-tokens) — The single biggest lever on cost and on whether long sessions stay coherent.
 - [RAG & Knowledge Graphs](#rag-graphs) — Getting your own material into the model reliably.
 - [Second Brain & Notes](#second-brain) — Where the knowledge lives when it isn't code.
@@ -39,30 +39,6 @@
 | [cloneify](https://github.com/cth9191/cloneify) | Turns "I want to clone X" into a paste-ready build prompt via a gated scope → research → reviewed-plan pipeline. |
 | [scroll-world](https://github.com/cth9191/scroll-world) | Immersive scroll-scrubbed "fly through the world" landing pages, generated with Higgsfield. My fork of oso95/scroll-world. |
 | [grill-me-codex](https://github.com/chaseai-yt/grill-me-codex) | Interviews you until the plan is airtight, then has Codex adversarially attack it before you write code. |
-
-<a id="skills-collections"></a>
-
-## Skill & Plugin Collections
-
-*Don't write a skill before checking whether someone already did.*
-
-| Tool | What it’s for |
-|---|---|
-| [hesreallyhim/awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code) | The big hand-picked community list. Go here when this page doesn't have it. |
-| [anthropics/claude-plugins-official](https://github.com/anthropics/claude-plugins-official) | Anthropic-curated plugin directory. Safest place to install from first. |
-| [anthropics/skills](https://github.com/anthropics/skills) | Official Agent Skills repo. Read one SKILL.md and you'll understand the whole format. |
-| [obra/superpowers](https://github.com/obra/superpowers) | The biggest agentic-skills framework going, plus an opinionated methodology. |
-| [mattpocock/skills](https://github.com/mattpocock/skills) | Straight out of Matt Pocock's .agents directory. Heavy TypeScript bias, high quality. |
-| [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | Production-grade engineering skills from Addy Osmani. |
-| [garrytan/gstack](https://github.com/garrytan/gstack) | Garry Tan's literal Claude Code setup — 23 opinionated tools wired as a team. |
-| [affaan-m/ECC](https://github.com/affaan-m/ECC) | Harness performance system: skills, instincts, memory, security in one bundle. |
-| [HKUDS/OpenSpace](https://github.com/HKUDS/OpenSpace) | A management layer once you have too many skills to keep straight. |
-| [rohitg00/awesome-claude-code-toolkit](https://github.com/rohitg00/awesome-claude-code-toolkit) | 135 agents, 35 skills, 42 commands in one place. |
-| [phuryn/pm-skills](https://github.com/phuryn/pm-skills) | Product-management skills — discovery through strategy. Not everything is code. |
-| [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) | CRO, copywriting, SEO and growth skills. |
-| [slavingia/skills](https://github.com/slavingia/skills) | Sahil Lavingia's skills, built around The Minimalist Entrepreneur. |
-| [Shubhamsaboo/awesome-llm-apps](https://github.com/Shubhamsaboo/awesome-llm-apps) | 100+ agent and RAG apps you can read as worked examples. |
-| [anthropics/claude-cookbooks](https://github.com/anthropics/claude-cookbooks) | Official notebooks. The fastest way to learn a technique properly. |
 
 <a id="frontend-design"></a>
 
@@ -124,6 +100,30 @@
 | [alibaba/page-agent](https://github.com/alibaba/page-agent) | In-page GUI agent — drive a web interface in natural language. |
 | [JCodesMore/ai-website-cloner-template](https://github.com/JCodesMore/ai-website-cloner-template) | Clone any site with one command. Great for studying a layout you like. |
 | [ShawnPana/phone-harness](https://github.com/ShawnPana/phone-harness) | Lets an agent control your actual phone. |
+
+<a id="skills-collections"></a>
+
+## Skill & Plugin Collections
+
+*Don't write a skill before checking whether someone already did.*
+
+| Tool | What it’s for |
+|---|---|
+| [hesreallyhim/awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code) | The big hand-picked community list. Go here when this page doesn't have it. |
+| [anthropics/claude-plugins-official](https://github.com/anthropics/claude-plugins-official) | Anthropic-curated plugin directory. Safest place to install from first. |
+| [anthropics/skills](https://github.com/anthropics/skills) | Official Agent Skills repo. Read one SKILL.md and you'll understand the whole format. |
+| [obra/superpowers](https://github.com/obra/superpowers) | The biggest agentic-skills framework going, plus an opinionated methodology. |
+| [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | Production-grade engineering skills from Addy Osmani. |
+| [garrytan/gstack](https://github.com/garrytan/gstack) | Garry Tan's literal Claude Code setup — 23 opinionated tools wired as a team. |
+| [affaan-m/ECC](https://github.com/affaan-m/ECC) | Harness performance system: skills, instincts, memory, security in one bundle. |
+| [HKUDS/OpenSpace](https://github.com/HKUDS/OpenSpace) | A management layer once you have too many skills to keep straight. |
+| [rohitg00/awesome-claude-code-toolkit](https://github.com/rohitg00/awesome-claude-code-toolkit) | 135 agents, 35 skills, 42 commands in one place. |
+| [phuryn/pm-skills](https://github.com/phuryn/pm-skills) | Product-management skills — discovery through strategy. Not everything is code. |
+| [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) | CRO, copywriting, SEO and growth skills. |
+| [slavingia/skills](https://github.com/slavingia/skills) | Sahil Lavingia's skills, built around The Minimalist Entrepreneur. |
+| [Shubhamsaboo/awesome-llm-apps](https://github.com/Shubhamsaboo/awesome-llm-apps) | 100+ agent and RAG apps you can read as worked examples. |
+| [anthropics/claude-cookbooks](https://github.com/anthropics/claude-cookbooks) | Official notebooks. The fastest way to learn a technique properly. |
+| [mattpocock/skills](https://github.com/mattpocock/skills) | Straight out of Matt Pocock's .agents directory. Heavy TypeScript bias, high quality. |
 
 <a id="context-tokens"></a>
 

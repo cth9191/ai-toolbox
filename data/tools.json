@@ -33,103 +33,6 @@
       ]
     },
     {
-      "id": "skills-collections",
-      "title": "Skill & Plugin Collections",
-      "blurb": "Don't write a skill before checking whether someone already did.",
-      "entries": [
-        {
-          "name": "hesreallyhim/awesome-claude-code",
-          "url": "https://github.com/hesreallyhim/awesome-claude-code",
-          "kind": "repo",
-          "desc": "The big hand-picked community list. Go here when this page doesn't have it."
-        },
-        {
-          "name": "anthropics/claude-plugins-official",
-          "url": "https://github.com/anthropics/claude-plugins-official",
-          "kind": "repo",
-          "desc": "Anthropic-curated plugin directory. Safest place to install from first."
-        },
-        {
-          "name": "anthropics/skills",
-          "url": "https://github.com/anthropics/skills",
-          "kind": "repo",
-          "desc": "Official Agent Skills repo. Read one SKILL.md and you'll understand the whole format."
-        },
-        {
-          "name": "obra/superpowers",
-          "url": "https://github.com/obra/superpowers",
-          "kind": "repo",
-          "desc": "The biggest agentic-skills framework going, plus an opinionated methodology."
-        },
-        {
-          "name": "mattpocock/skills",
-          "url": "https://github.com/mattpocock/skills",
-          "kind": "repo",
-          "desc": "Straight out of Matt Pocock's .agents directory. Heavy TypeScript bias, high quality."
-        },
-        {
-          "name": "addyosmani/agent-skills",
-          "url": "https://github.com/addyosmani/agent-skills",
-          "kind": "repo",
-          "desc": "Production-grade engineering skills from Addy Osmani."
-        },
-        {
-          "name": "garrytan/gstack",
-          "url": "https://github.com/garrytan/gstack",
-          "kind": "repo",
-          "desc": "Garry Tan's literal Claude Code setup — 23 opinionated tools wired as a team."
-        },
-        {
-          "name": "affaan-m/ECC",
-          "url": "https://github.com/affaan-m/ECC",
-          "kind": "repo",
-          "desc": "Harness performance system: skills, instincts, memory, security in one bundle."
-        },
-        {
-          "name": "HKUDS/OpenSpace",
-          "url": "https://github.com/HKUDS/OpenSpace",
-          "kind": "repo",
-          "desc": "A management layer once you have too many skills to keep straight."
-        },
-        {
-          "name": "rohitg00/awesome-claude-code-toolkit",
-          "url": "https://github.com/rohitg00/awesome-claude-code-toolkit",
-          "kind": "repo",
-          "desc": "135 agents, 35 skills, 42 commands in one place."
-        },
-        {
-          "name": "phuryn/pm-skills",
-          "url": "https://github.com/phuryn/pm-skills",
-          "kind": "repo",
-          "desc": "Product-management skills — discovery through strategy. Not everything is code."
-        },
-        {
-          "name": "coreyhaines31/marketingskills",
-          "url": "https://github.com/coreyhaines31/marketingskills",
-          "kind": "repo",
-          "desc": "CRO, copywriting, SEO and growth skills."
-        },
-        {
-          "name": "slavingia/skills",
-          "url": "https://github.com/slavingia/skills",
-          "kind": "repo",
-          "desc": "Sahil Lavingia's skills, built around The Minimalist Entrepreneur."
-        },
-        {
-          "name": "Shubhamsaboo/awesome-llm-apps",
-          "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
-          "kind": "repo",
-          "desc": "100+ agent and RAG apps you can read as worked examples."
-        },
-        {
-          "name": "anthropics/claude-cookbooks",
-          "url": "https://github.com/anthropics/claude-cookbooks",
-          "kind": "repo",
-          "desc": "Official notebooks. The fastest way to learn a technique properly."
-        }
-      ]
-    },
-    {
       "id": "frontend-design",
       "title": "Frontend & Design",
       "blurb": "Stopping your agent from producing generic purple-gradient slop.",
@@ -351,6 +254,103 @@
           "url": "https://github.com/ShawnPana/phone-harness",
           "kind": "repo",
           "desc": "Lets an agent control your actual phone."
+        }
+      ]
+    },
+    {
+      "id": "skills-collections",
+      "title": "Skill & Plugin Collections",
+      "blurb": "Don't write a skill before checking whether someone already did.",
+      "entries": [
+        {
+          "name": "hesreallyhim/awesome-claude-code",
+          "url": "https://github.com/hesreallyhim/awesome-claude-code",
+          "kind": "repo",
+          "desc": "The big hand-picked community list. Go here when this page doesn't have it."
+        },
+        {
+          "name": "anthropics/claude-plugins-official",
+          "url": "https://github.com/anthropics/claude-plugins-official",
+          "kind": "repo",
+          "desc": "Anthropic-curated plugin directory. Safest place to install from first."
+        },
+        {
+          "name": "anthropics/skills",
+          "url": "https://github.com/anthropics/skills",
+          "kind": "repo",
+          "desc": "Official Agent Skills repo. Read one SKILL.md and you'll understand the whole format."
+        },
+        {
+          "name": "obra/superpowers",
+          "url": "https://github.com/obra/superpowers",
+          "kind": "repo",
+          "desc": "The biggest agentic-skills framework going, plus an opinionated methodology."
+        },
+        {
+          "name": "addyosmani/agent-skills",
+          "url": "https://github.com/addyosmani/agent-skills",
+          "kind": "repo",
+          "desc": "Production-grade engineering skills from Addy Osmani."
+        },
+        {
+          "name": "garrytan/gstack",
+          "url": "https://github.com/garrytan/gstack",
+          "kind": "repo",
+          "desc": "Garry Tan's literal Claude Code setup — 23 opinionated tools wired as a team."
+        },
+        {
+          "name": "affaan-m/ECC",
+          "url": "https://github.com/affaan-m/ECC",
+          "kind": "repo",
+          "desc": "Harness performance system: skills, instincts, memory, security in one bundle."
+        },
+        {
+          "name": "HKUDS/OpenSpace",
+          "url": "https://github.com/HKUDS/OpenSpace",
+          "kind": "repo",
+          "desc": "A management layer once you have too many skills to keep straight."
+        },
+        {
+          "name": "rohitg00/awesome-claude-code-toolkit",
+          "url": "https://github.com/rohitg00/awesome-claude-code-toolkit",
+          "kind": "repo",
+          "desc": "135 agents, 35 skills, 42 commands in one place."
+        },
+        {
+          "name": "phuryn/pm-skills",
+          "url": "https://github.com/phuryn/pm-skills",
+          "kind": "repo",
+          "desc": "Product-management skills — discovery through strategy. Not everything is code."
+        },
+        {
+          "name": "coreyhaines31/marketingskills",
+          "url": "https://github.com/coreyhaines31/marketingskills",
+          "kind": "repo",
+          "desc": "CRO, copywriting, SEO and growth skills."
+        },
+        {
+          "name": "slavingia/skills",
+          "url": "https://github.com/slavingia/skills",
+          "kind": "repo",
+          "desc": "Sahil Lavingia's skills, built around The Minimalist Entrepreneur."
+        },
+        {
+          "name": "Shubhamsaboo/awesome-llm-apps",
+          "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+          "kind": "repo",
+          "desc": "100+ agent and RAG apps you can read as worked examples."
+        },
+        {
+          "name": "anthropics/claude-cookbooks",
+          "url": "https://github.com/anthropics/claude-cookbooks",
+          "kind": "repo",
+          "desc": "Official notebooks. The fastest way to learn a technique properly."
+        },
+        {
+          "name": "mattpocock/skills",
+          "url": "https://github.com/mattpocock/skills",
+          "kind": "repo",
+          "desc": "Straight out of Matt Pocock's .agents directory. Heavy TypeScript bias, high quality."
         }
       ]
     },
