@@ -1,0 +1,379 @@
+THE AI BUILDER'S TOOLBOX
+What to reach for, by the thing you're actually trying to do.
+
+149 tools across 19 domains. * = I've actually used it.
+
+
+— START HERE —
+If you only open six links, open these.
+
+* Claude Code — The terminal coding agent everything else on this page plugs into.
+    https://code.claude.com
+* Claude Docs / API — Model IDs, pricing, prompt caching, tool use — the primary source, not a blog post.
+    https://platform.claude.com
+* anthropics/skills — Official Agent Skills repo. Read one SKILL.md and you'll understand the whole format.
+    https://github.com/anthropics/skills
+  anthropics/claude-plugins-official — Anthropic-curated plugin directory. Safest place to install from first.
+    https://github.com/anthropics/claude-plugins-official
+  hesreallyhim/awesome-claude-code — The big hand-picked community list. Go here when this page doesn't have it.
+    https://github.com/hesreallyhim/awesome-claude-code
+* Model Context Protocol — The spec behind MCP servers. Worth 20 minutes before you install your first one.
+    https://modelcontextprotocol.io
+
+— FRONTEND & DESIGN —
+Stopping your agent from producing generic purple-gradient slop.
+
+* pbakaus/impeccable — A design language you drop in so the agent stops defaulting to bootstrap-brain.
+    https://github.com/pbakaus/impeccable
+* Leonxlnx/taste-skill — Gives the model actual taste. The anti-slop skill people mean when they say anti-slop.
+    https://github.com/Leonxlnx/taste-skill
+  Nutlope/hallmark — Same job as the two above, different opinion. Works in Claude Code, Cursor and Codex.
+    https://github.com/Nutlope/hallmark
+* VoltAgent/awesome-design-md — DESIGN.md files reverse-engineered from real brand systems. Drop one in your repo.
+    https://github.com/VoltAgent/awesome-design-md
+  google-labs-code/design.md — The actual spec for describing a visual identity to a coding agent.
+    https://github.com/google-labs-code/design.md
+* 21st.dev — Component marketplace + MCP so the agent can pull real UI instead of inventing it.
+    https://21st.dev
+* shadcn/ui — The component library most agent-generated React lands on. Know it.
+    https://ui.shadcn.com
+  shadcn/improve — Use your best model to audit the codebase, then let a cheap model execute the plan.
+    https://github.com/shadcn/improve
+* nexu-io/open-design — Local-first desktop app; open-source take on Claude Design.
+    https://github.com/nexu-io/open-design
+* facebook/astryx — Open-source design system built to be driven by an agent.
+    https://github.com/facebook/astryx
+* alchaincyf/huashu-design — HTML-native design skill — good when you want markup, not a framework.
+    https://github.com/alchaincyf/huashu-design
+  nexu-io/html-anything — Agentic HTML editor. Agent writes the markup, you ship it.
+    https://github.com/nexu-io/html-anything
+* Tailwind CSS — Assume every agent already knows it. Fight this and you'll lose.
+    https://tailwindcss.com
+  oil-oil/oil-motion — Smooth, responsive web animations without hand-rolling easing curves.
+    https://github.com/oil-oil/oil-motion
+  Jakubantalik/thinking-orbs — Loading indicators built specifically for AI/agent UIs. Small but you'll want it.
+    https://github.com/Jakubantalik/thinking-orbs
+* Figma — Still where the design actually gets decided before code touches it.
+    https://figma.com
+
+— DIAGRAMS & VISUAL EXPLAINERS —
+For when the answer is a picture, not a paragraph.
+
+  cathrynlavery/diagram-design — 29 editorial diagram types as clean HTML+SVG. No Mermaid look, no drop shadows.
+    https://github.com/cathrynlavery/diagram-design
+  tt-a1i/archify — Architecture, sequence, data-flow and lifecycle diagrams that are actually verifiable.
+    https://github.com/tt-a1i/archify
+  coleam00/excalidraw-diagram-skill — Makes any coding agent produce real Excalidraw files.
+    https://github.com/coleam00/excalidraw-diagram-skill
+  yizhiyanhua-ai/fireworks-tech-graph — Natural language in, production-quality SVG/PNG technical diagrams out.
+    https://github.com/yizhiyanhua-ai/fireworks-tech-graph
+* Excalidraw — The hand-drawn whiteboard. Fastest path from head to shareable picture.
+    https://excalidraw.com
+* Mermaid — Diagrams as text. Renders natively in GitHub and most docs tools.
+    https://mermaid.js.org
+
+— CONTEXT & TOKEN MANAGEMENT —
+The single biggest lever on cost and on whether long sessions stay coherent.
+
+* JuliusBrussee/caveman — "Why use many token when few token do trick." Cuts roughly 65% of tokens.
+    https://github.com/JuliusBrussee/caveman
+* DietrichGebert/ponytail — Makes the agent think like the laziest senior dev alive. Best code is the code you don't write.
+    https://github.com/DietrichGebert/ponytail
+  Mibayy/token-savior — MCP server that held 97.9% on a real coding benchmark at 80% fewer active tokens.
+    https://github.com/Mibayy/token-savior
+  thomaschill/unclog — Audits which MCP servers, skills and CLAUDE.md bloat are eating your context window.
+    https://github.com/thomaschill/unclog
+* DeusData/codebase-memory-mcp — Indexes a codebase into a persistent knowledge graph so the agent stops re-reading everything.
+    https://github.com/DeusData/codebase-memory-mcp
+* MemPalace/mempalace — Best-benchmarked open-source memory system, and free.
+    https://github.com/MemPalace/mempalace
+  TencentCloud/TencentDB-Agent-Memory — Team-level shared memory hub rather than per-developer memory.
+    https://github.com/TencentCloud/TencentDB-Agent-Memory
+
+— RAG & KNOWLEDGE GRAPHS —
+Getting your own material into the model reliably.
+
+* HKUDS/LightRAG — Simple, fast, graph-flavoured RAG. The default I'd start from.
+    https://github.com/HKUDS/LightRAG
+  HKUDS/RAG-Anything — All-in-one RAG framework from the same lab when LightRAG isn't enough.
+    https://github.com/HKUDS/RAG-Anything
+* Graphify-Labs/graphify — Turns a codebase plus its docs, schemas and PDFs into a queryable knowledge graph.
+    https://github.com/Graphify-Labs/graphify
+  vitali87/code-graph-rag — RAG aimed squarely at multi-language monorepos.
+    https://github.com/vitali87/code-graph-rag
+* tirth8205/code-review-graph — Local-first persistent map of your codebase, exposed over MCP and CLI.
+    https://github.com/tirth8205/code-review-graph
+  langchain-ai/openwiki — Writes and then maintains agent-facing docs for your repo.
+    https://github.com/langchain-ai/openwiki
+  pgvector/pgvector — Vectors inside Postgres. Usually the right answer before you buy a vector DB.
+    https://github.com/pgvector/pgvector
+  Chroma — Easiest local vector store to get running in an afternoon.
+    https://trychroma.com
+
+— SECOND BRAIN & NOTES —
+Where the knowledge lives when it isn't code.
+
+* Obsidian — Plain markdown on your disk. That's exactly why agents work well against it.
+    https://obsidian.md
+  kepano/obsidian-skills — Teaches your agent the Obsidian CLI and open formats. From Obsidian's own CEO.
+    https://github.com/kepano/obsidian-skills
+* AgriciDaniel/claude-obsidian — Self-organising second brain — drop any source in and it files itself.
+    https://github.com/AgriciDaniel/claude-obsidian
+* NotebookLM — Best free tool for interrogating a pile of sources you didn't write.
+    https://notebooklm.google.com
+* teng-lin/notebooklm-py — Unofficial Python API + skill. Gets you features the web UI doesn't expose.
+    https://github.com/teng-lin/notebooklm-py
+  pjeby/hot-reload — Auto-reloads Obsidian plugins while you build them. Tiny, essential.
+    https://github.com/pjeby/hot-reload
+
+— RESEARCH & INTELLIGENCE —
+Finding out what's actually true and actually current.
+
+* mvanhorn/last30days-skill — Researches a topic across Reddit, X, YouTube, HN and Polymarket. My most-used research skill.
+    https://github.com/mvanhorn/last30days-skill
+  Panniantong/Agent-Reach — Gives the agent eyes on Twitter, Reddit and YouTube instead of guessing.
+    https://github.com/Panniantong/Agent-Reach
+* Firecrawl — Search and scrape the live web at scale, in a format models can read.
+    https://firecrawl.dev
+  firecrawl/anydoc — Word, PowerPoint, Excel, EPUB, PDF → clean Markdown.
+    https://github.com/firecrawl/anydoc
+* baidu/Unlimited-OCR — One-shot parsing of very long documents. Good where normal OCR falls over.
+    https://github.com/baidu/Unlimited-OCR
+  karpathy/autoresearch — Agents running their own research loop. Worth reading even if you never run it.
+    https://github.com/karpathy/autoresearch
+  koala73/worldmonitor — Real-time news and geopolitical dashboard, AI-aggregated.
+    https://github.com/koala73/worldmonitor
+  HKUDS/DeepTutor — Personalised tutoring that persists across sessions.
+    https://github.com/HKUDS/DeepTutor
+  every-app/open-seo — Open-source answer to Semrush and Ahrefs.
+    https://github.com/every-app/open-seo
+
+— SKILL & PLUGIN COLLECTIONS —
+Don't write a skill before checking whether someone already did.
+
+  obra/superpowers — The biggest agentic-skills framework going, plus an opinionated methodology.
+    https://github.com/obra/superpowers
+* mattpocock/skills — Straight out of Matt Pocock's .agents directory. Heavy TypeScript bias, high quality.
+    https://github.com/mattpocock/skills
+  addyosmani/agent-skills — Production-grade engineering skills from Addy Osmani.
+    https://github.com/addyosmani/agent-skills
+  garrytan/gstack — Garry Tan's literal Claude Code setup — 23 opinionated tools wired as a team.
+    https://github.com/garrytan/gstack
+  affaan-m/ECC — Harness performance system: skills, instincts, memory, security in one bundle.
+    https://github.com/affaan-m/ECC
+* HKUDS/OpenSpace — A management layer once you have too many skills to keep straight.
+    https://github.com/HKUDS/OpenSpace
+  rohitg00/awesome-claude-code-toolkit — 135 agents, 35 skills, 42 commands in one place.
+    https://github.com/rohitg00/awesome-claude-code-toolkit
+  phuryn/pm-skills — Product-management skills — discovery through strategy. Not everything is code.
+    https://github.com/phuryn/pm-skills
+  coreyhaines31/marketingskills — CRO, copywriting, SEO and growth skills.
+    https://github.com/coreyhaines31/marketingskills
+  slavingia/skills — Sahil Lavingia's skills, built around The Minimalist Entrepreneur.
+    https://github.com/slavingia/skills
+  Shubhamsaboo/awesome-llm-apps — 100+ agent and RAG apps you can read as worked examples.
+    https://github.com/Shubhamsaboo/awesome-llm-apps
+  anthropics/claude-cookbooks — Official notebooks. The fastest way to learn a technique properly.
+    https://github.com/anthropics/claude-cookbooks
+
+— LEARNING & GUIDES —
+Send these to someone who just installed Claude Code and is staring at a blinking cursor.
+
+  luongnv89/claude-howto — Visual, example-driven, basics to advanced agents. Best first stop.
+    https://github.com/luongnv89/claude-howto
+  FlorianBruniaux/claude-code-ultimate-guide — The most complete single guide: workflows, hooks, skills, MCP.
+    https://github.com/FlorianBruniaux/claude-code-ultimate-guide
+  microsoft/AI-For-Beginners — 12 weeks, 24 lessons. Actual fundamentals, not prompt tricks.
+    https://github.com/microsoft/AI-For-Beginners
+  asgeirtj/system_prompts_leaks — Extracted system prompts. Read them to see how the pros really write instructions.
+    https://github.com/asgeirtj/system_prompts_leaks
+
+— AGENTS & ORCHESTRATION —
+Running more than one agent without losing the plot.
+
+  msitarzewski/agency-agents — A whole agency of role-specialised agents, frontend through community.
+    https://github.com/msitarzewski/agency-agents
+  stablyai/orca — An IDE for driving a fleet of parallel agents, whichever harness you use.
+    https://github.com/stablyai/orca
+  openai/codex-plugin-cc — Call Codex from inside Claude Code for reviews and delegated tasks. Two models beat one.
+    https://github.com/openai/codex-plugin-cc
+  manaflow-ai/cmux — Terminal built for running several coding agents at once.
+    https://github.com/manaflow-ai/cmux
+  yc-software/qm — Multiplayer agent harness — built for teams, not solo runs.
+    https://github.com/yc-software/qm
+* HKUDS/ClawTeam — Agent swarm behind a single command.
+    https://github.com/HKUDS/ClawTeam
+* gsd-build/gsd-2 — Meta-prompting and spec-driven development. Good if you like a rigid process.
+    https://github.com/gsd-build/gsd-2
+  louislva/claude-peers-mcp — Lets your separate Claude Code instances talk to each other.
+    https://github.com/louislva/claude-peers-mcp
+  vercel/eve — Vercel's open framework for building agents.
+    https://github.com/vercel/eve
+* chaseai-yt/grill-me-codex — Mine. Interviews you until the plan is airtight, then makes Codex attack it before you build.
+    https://github.com/chaseai-yt/grill-me-codex
+
+— MODELS, ROUTING & COST —
+Picking the right model and not overpaying for it.
+
+* OpenRouter — One API key, most models. Easiest way to A/B a model without a new account.
+    https://openrouter.ai
+  Artificial Analysis — Independent speed, cost and quality benchmarks. Check before believing a launch post.
+    https://artificialanalysis.ai
+  LLM-Stats — Fast side-by-side of price and context window.
+    https://llm-stats.com
+  diegosouzapw/OmniRoute — MIT-licensed gateway: 330+ providers, 1200+ models, many free.
+    https://github.com/diegosouzapw/OmniRoute
+  musistudio/claude-code-router — One local control plane to route Claude Code across different models.
+    https://github.com/musistudio/claude-code-router
+  BerriAI/litellm — The proxy layer most production stacks end up using.
+    https://github.com/BerriAI/litellm
+  AlexsJones/llmfit — One command tells you which models your actual hardware can run.
+    https://github.com/AlexsJones/llmfit
+* Ollama — Local models with the least ceremony.
+    https://ollama.com
+  LM Studio — Ollama with a GUI. Better for people who don't live in a terminal.
+    https://lmstudio.ai
+  JustVugg/colibri — Runs frontier MoE models on hardware you already own. Pure C, zero deps.
+    https://github.com/JustVugg/colibri
+
+— CLI & TERMINAL —
+Agents are best at things that have a command line. This is how you give them one.
+
+* HKUDS/CLI-Anything — Makes any software agent-native by giving it a CLI. The big idea on this whole page.
+    https://github.com/HKUDS/CLI-Anything
+* jackwener/OpenCLI — Turns any website into a CLI, using your already-logged-in browser.
+    https://github.com/jackwener/OpenCLI
+* googleworkspace/cli — One command for Drive, Gmail, Calendar, Sheets and Docs. Official.
+    https://github.com/googleworkspace/cli
+  iOfficeAI/OfficeCLI — Office suite built so agents can read and edit documents directly.
+    https://github.com/iOfficeAI/OfficeCLI
+* herdrdev/herdr — A runtime for your coding agents to actually live on.
+    https://github.com/herdrdev/herdr
+* cli/cli — GitHub's own CLI. PRs, issues, releases, Actions — all scriptable by an agent.
+    https://github.com/cli/cli
+  anthropics/anthropic-cli — Official CLI for the Claude API. Handy for quick scripted calls.
+    https://github.com/anthropics/anthropic-cli
+  junegunn/fzf — Fuzzy finder. Rewires how you use a terminal within a day.
+    https://github.com/junegunn/fzf
+  BurntSushi/ripgrep — The fast grep. Already what your agent reaches for under the hood.
+    https://github.com/BurntSushi/ripgrep
+  jesseduffield/lazygit — Git you can actually see. Best way to review what an agent just committed.
+    https://github.com/jesseduffield/lazygit
+* sharkdp/bat — cat with syntax highlighting and line numbers.
+    https://github.com/sharkdp/bat
+  yt-dlp/yt-dlp — Downloads audio and video from nearly anywhere. Backbone of most video pipelines.
+    https://github.com/yt-dlp/yt-dlp
+
+— BROWSER & WEB AUTOMATION —
+Letting the agent drive a real browser.
+
+* Playwright — The automation library to standardise on. Screenshots, forms, scraping, tests.
+    https://playwright.dev
+* microsoft/playwright-cli — Record actions and get generated Playwright code back.
+    https://github.com/microsoft/playwright-cli
+  browser-use/browser-harness — Self-healing harness so LLM web tasks survive a changed selector.
+    https://github.com/browser-use/browser-harness
+  alibaba/page-agent — In-page GUI agent — drive a web interface in natural language.
+    https://github.com/alibaba/page-agent
+* JCodesMore/ai-website-cloner-template — Clone any site with one command. Great for studying a layout you like.
+    https://github.com/JCodesMore/ai-website-cloner-template
+  ShawnPana/phone-harness — Lets an agent control your actual phone.
+    https://github.com/ShawnPana/phone-harness
+
+— DEPLOYMENT & INFRASTRUCTURE —
+Getting it off your laptop.
+
+* Vercel — Fastest path to a live frontend. The CLI is fully agent-drivable.
+    https://vercel.com
+* Railway — Where I put things that need a real backend and a database.
+    https://railway.com
+* Supabase — Postgres, auth, storage and vectors. Usually the whole backend.
+    https://supabase.com
+  supabase/supabase — Self-host it if you'd rather not rent it.
+    https://github.com/supabase/supabase
+  Netlify — The other obvious static/edge host.
+    https://netlify.com
+  Fly.io — Containers close to your users, without a Kubernetes hobby.
+    https://fly.io
+* Docker — Still the unit of "works on my machine" being false.
+    https://docker.com
+  apple/container — Linux containers on Apple silicon via lightweight VMs. Fast.
+    https://github.com/apple/container
+  anthropic-experimental/sandbox-runtime — Filesystem and network limits on agent-run code. Read this before you go autonomous.
+    https://github.com/anthropic-experimental/sandbox-runtime
+  anthropics/claude-code-action — Runs Claude Code inside GitHub Actions.
+    https://github.com/anthropics/claude-code-action
+
+— SECURITY & CODE REVIEW —
+The part people skip right up until they can't.
+
+  usestrix/strix — Open-source AI pentesting against your own app. Finds and helps fix.
+    https://github.com/usestrix/strix
+  alibaba/open-code-review — Battle-tested at Alibaba scale. Hybrid static + model review.
+    https://github.com/alibaba/open-code-review
+  anthropics/defending-code-reference-harness — Threat modelling, scanning, triage and patching skills from Anthropic.
+    https://github.com/anthropics/defending-code-reference-harness
+
+— VIDEO, AUDIO & CONTENT —
+Turning work into something people can watch.
+
+  calesthio/OpenMontage — Agentic video production — 12 pipelines, 100+ operations.
+    https://github.com/calesthio/OpenMontage
+* bradautomates/claude-video — /watch downloads a video, pulls frames and transcribes it. Claude can finally see video.
+    https://github.com/bradautomates/claude-video
+* Higgsfield — Image and video generation I use for covers and B-roll.
+    https://higgsfield.ai
+* Remotion — Video as React components. Programmatic, diffable, repeatable.
+    https://remotion.dev
+* diffusionstudio/lottie — Production-ready Lottie animations straight out of Claude Code or Codex.
+    https://github.com/diffusionstudio/lottie
+  op7418/guizang-ppt-skill — Genuinely good-looking HTML slide decks — editorial and Swiss layouts.
+    https://github.com/op7418/guizang-ppt-skill
+  ElevenLabs — Voiceover that doesn't sound like 2023.
+    https://elevenlabs.io
+  Zackriya-Solutions/meetily — Privacy-first meeting notes. Live transcription, runs locally.
+    https://github.com/Zackriya-Solutions/meetily
+* img2threejs/img2threejs — Reference image → animation-ready procedural Three.js. Genuinely surprising.
+    https://github.com/img2threejs/img2threejs
+* oso95/scroll-world — Turns a brand into a scrollable 3D world landing page.
+    https://github.com/oso95/scroll-world
+
+— VOICE & DICTATION —
+Talking to your machine is roughly 3x faster than typing at it.
+
+* bubnyukab/whisperflow-windows — Local, offline Wispr Flow alternative for Windows. Free, no account.
+    https://github.com/bubnyukab/whisperflow-windows
+* drajb/whisper-local — Offline dictation for Windows and macOS. Small project, does the job.
+    https://github.com/drajb/whisper-local
+  huggingface/speech-to-speech — Build a local voice agent from open models.
+    https://github.com/huggingface/speech-to-speech
+
+— WORK, CAREER & OPS —
+Agents pointed at things that aren't code.
+
+* paperclipai/paperclip — Managing agents as actual coworkers. Open source.
+    https://github.com/paperclipai/paperclip
+* santifer/career-ops — Scans job boards and grades listings against a structured A-F rubric.
+    https://github.com/santifer/career-ops
+  MadsLorentzen/ai-job-search — The same idea, running entirely on your machine.
+    https://github.com/MadsLorentzen/ai-job-search
+  interviewstreet/hiring-agent — Scores resumes. Useful from either side of the table.
+    https://github.com/interviewstreet/hiring-agent
+* n8n — Self-hostable automation. The glue when a skill isn't the right shape.
+    https://n8n.io
+  Composio — Pre-built tool integrations so you don't write another OAuth flow.
+    https://composio.dev
+
+— EDITORS & HARNESSES —
+Where you sit while the agent works.
+
+* Cursor — The IDE most people arrive from. Still excellent at inline edits.
+    https://cursor.com
+  Zed — Very fast, collaborative, increasingly agent-native.
+    https://zed.dev
+* openai/codex — OpenAI's terminal agent. Best used as a second opinion on Claude's work.
+    https://github.com/openai/codex
+  xai-org/grok-build — xAI's harness and TUI. Fullscreen, mouse-interactive, extensible.
+    https://github.com/xai-org/grok-build
+  Warp — Terminal with agent features baked in rather than bolted on.
+    https://warp.dev
