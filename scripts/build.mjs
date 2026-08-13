@@ -78,18 +78,24 @@ function buildSkool() {
 }
 
 // ---------- plain text fallback ----------
+// Plain text tuned for pasting straight into a rich-text composer that strips
+// markup: no tags at all, bare URLs so the editor auto-links them.
 function buildText() {
   const L = [];
   L.push(meta.title.toUpperCase());
   L.push(meta.tagline, '');
-  L.push(`${totalEntries} tools across ${domains.length} domains. * = I've actually used it.`, '');
+  L.push(`${totalEntries} tools across ${domains.length} domains.`);
+  L.push(`★ = I've actually used it, not just bookmarked it.`);
+  L.push(`Every link checked ${meta.starsAsOf}.`);
   for (const d of domains) {
-    L.push('', `— ${d.title.toUpperCase()} —`, d.blurb, '');
+    L.push('', '─────────────────────────────', `${d.title.toUpperCase()}`, d.blurb, '');
     for (const e of d.entries) {
-      L.push(`${e.used ? '* ' : '  '}${e.name} — ${e.desc}`);
-      L.push(`    ${e.url}`);
+      L.push(`${e.used ? '★ ' : ''}${e.name} — ${e.desc}`);
+      L.push(e.url, '');
     }
   }
+  L.push('─────────────────────────────');
+  L.push('Something missing? Drop it in the comments and I’ll add it.');
   return L.join('\n');
 }
 
