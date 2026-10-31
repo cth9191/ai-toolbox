@@ -254,6 +254,12 @@
           "url": "https://github.com/ShawnPana/phone-harness",
           "kind": "repo",
           "desc": "Lets an agent control your actual phone."
+        },
+        {
+          "name": "agent-qa",
+          "url": "https://vostride.com",
+          "kind": "cli",
+          "desc": "Run natural-language web and mobile regression tests from your coding agent, inspect step evidence, and reuse validated lessons through persistent memory."
         }
       ]
     },

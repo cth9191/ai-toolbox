@@ -2,7 +2,7 @@
 
 **What to reach for, by the thing you're actually trying to do.**
 
-148 curated skills, repos and tools across 19 domains.
+149 curated skills, repos and tools across 19 domains.
 
 > Every link here was checked against the GitHub API or a live HTTP request. Curated from what I actually use and talk about, not scraped from an awesome-list.
 
@@ -100,6 +100,7 @@
 | [alibaba/page-agent](https://github.com/alibaba/page-agent) | In-page GUI agent — drive a web interface in natural language. |
 | [JCodesMore/ai-website-cloner-template](https://github.com/JCodesMore/ai-website-cloner-template) | Clone any site with one command. Great for studying a layout you like. |
 | [ShawnPana/phone-harness](https://github.com/ShawnPana/phone-harness) | Lets an agent control your actual phone. |
+| [agent-qa](https://vostride.com) | Run natural-language web and mobile regression tests from your coding agent, inspect step evidence, and reuse validated lessons through persistent memory. |
 
 <a id="skills-collections"></a>
 

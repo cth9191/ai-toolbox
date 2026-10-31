@@ -1,7 +1,7 @@
 THE AI BUILDER'S TOOLBOX
 What to reach for, by the thing you're actually trying to do.
 
-148 curated skills, repos and tools across 19 domains.
+149 curated skills, repos and tools across 19 domains.
 Every link checked 2026-08-13.
 
 ─────────────────────────────
@@ -133,6 +133,9 @@ https://github.com/JCodesMore/ai-website-cloner-template
 
 ShawnPana/phone-harness — Lets an agent control your actual phone.
 https://github.com/ShawnPana/phone-harness
+
+agent-qa — Run natural-language web and mobile regression tests from your coding agent, inspect step evidence, and reuse validated lessons through persistent memory.
+https://vostride.com
 
 
 ─────────────────────────────
